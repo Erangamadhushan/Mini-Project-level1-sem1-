@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Start to Finish</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <meta name="description" content=""/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <link rel="icon" type="text/x-icon" href="image_video/main_logo1.png"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing:border-box;
+            }
+            .box{
+                width:90%;
+                position:relative;
+                min-height:660px;
+                margin:auto;
+                padding:20px;
+                border:none;
+                box-shadow: 8px 10px  15px rgba(0,0,0,0.2);
+                border-radius:12px;
+                transition:0.4s;
+            }
+            .box:hover {
+                box-shadow:8px 11px 20px rgba(0,0,0,0.8);
+                color:rgb(47, 16, 223);
+            }
+            
+            .box h2{
+                text-align:center;
+                transition:letter-spacing 1s;
+            }
+            .box:hover h2{
+                letter-spacing:2px;
+                font-weight:bolder;
+            }
+            .box img{
+                position:relative;
+                width:95%;
+                margin:auto;
+                
+            }
+            .box .div1{
+                width:90%;
+                margin:auto;
+                min-height:300px;
+            }
+            .main_logo {
+                padding-left:50px;
+                text-transform:uppercase;
+            padding-top:20px;
+            }
+            .main_logo span {
+                color:coral;
+            }
+            .col-md-8.nav_link ul {
+                display:flex;
+                justify-content:flex-start;
+                align-items:center;
+            }
+            .col-md-8.nav_link ul li{
+
+            list-style:none;
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            padding-inline:15px;
+            border-radius:8px;
+            }
+            .topics{
+            text-align:center;
+            }
+            .col-md-8.nav_link ul li a{
+            text-decoration:none;
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            padding:5px 12px;
+            color:#ffffff;
+            font-size:24px;
+            margin-block:6px;
+
+            }
+            .col-md-8.nav_link ul li a:hover{
+            color:coral;
+
+            }
+            .col-md-8 .nav_link ul li:hover a{
+            color:coral;
+            position:relative;
+            width:100%;
+            }
+            .footer {
+                min-height:50vh;
+                background-image:url(image_video/footer_image.jpg);
+                background-size:cover;
+                padding:0;
+                
+                color:#fff;
+            }
+            .footer_link div a{
+                display:grid;
+                text-decoration:none;
+                padding:5px 40px;
+                color:#fff;
+            }
+            .footer_link div a:hover{
+                color:yellow;
+            }
+            .footer_color {
+                background-color:black;
+                min-height:50vh;
+                opacity:0.7;
+            }
+            .footer_description p{
+                color:yellow;
+                padding:20px;
+            }
+            .footer_description h3,h4{
+                padding:15px;
+            }
+
+            .div_class1 {
+                width:90%;
+                margin:auto;
+                border:none;
+                border-radius:10px;
+                box-shadow:4px 6px 12px gray;
+            }
+            .div_class1:hover {
+                box-shadow:5px 7px 20px gray;
+            }
+            .div_class1_1 {
+                width:70%;
+                margin:auto;
+                border:none;
+                border-radius:10px;
+                box-shadow:4px 6px 12px gray;
+            }
+            .div_class1_1:hover {
+                box-shadow:5px 7px 20px gray;
+            }
+            .div_class1 h2{
+                text-align:center;
+            }
+            .div_class1 img{
+                width:50%;
+                margin-inline:20%;
+                padding-block:20px;
+            }
+            .div_class1_1 h2{
+                text-align:center;
+            }
+            .div_class1_1 img{
+                width:60%;
+                margin-inline:20%;
+                padding-block:20px;
+            }
+            .fixed_btn {
+                position:fixed;
+                right:50px;
+                bottom:30px;
+                z-index:1001;
+                text-transform:uppercase;
+                display:none;
+            }
+            @media screen and (max-width:560px) {
+                .demo_class6_1 {flex-direction:row;}
+            } 
+        </style>
+        <script type="text/javascript">
+            function fixedButton() {
+                let value = window.scrollY;
+                if(value > 1000){
+                    document.getElementById('fixed_btn').style.display = "block";
+                }
+                else {
+                    document.getElementById('fixed_btn').style.display = "none";
+                }
+            }
+        </script>
+    </head>
+    <body onscroll="fixedButton()">
+        <a class="btn btn-danger fixed_btn px-4" href="#header" id="fixed_btn">Top</a>
+        <div class="container-fluid py-3 bg-success" id="header"></div>
+        <header><!-- Start Header element-->
+            <div class="container-fluid  bg-dark py-1">
+                <div class="row main_row text-white my-1">
+                    <div class="col-md-4 main_logo">
+                        <h3><span>S</span>tart <span>t</span>o <span>F</span>inish</h3>
+                    </div>
+                    <div class="col-md-8 nav_link">     <!--Navibar links-->
+                        <ul>
+                            <li><a href="index.html" class="btn">Home</a></li>
+                            <li><a href="index4.html" class="btn ">Help</a></li>
+                            <li><a href="contact_us.html" class="btn ">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container-fluid bg-dark text-white">
+            <div class="container my-1 py-4 ">
+                <div class="row" >
+                    <div class="col-md-6">
+                        <div style="">
+                            <h2 style="font-size:50px;text-align:center">MAP</h2>
+                            <a href="https://www.google.com/maps/place/Hikkaduwa+Beach/@6.134702,80.0905363,1352m/data=!3m1!1">
+                            <img id="map" src="image_video/Map.png" alt="" style="width:70%;height:auto;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 py-5">
+                        <h2 style="font-size:50px;" class="py-4">About Sri Lanka</h2>
+                        <p class="my-2 py-4 text-success h3">Sri Lanka, historically known as Ceylon and officially the Democratic Socialist Republic of Sri Lanka, is an island country in South Asia. It lies in the Indian Ocean, southwest of the Bay of Bengal, separated from the Indian peninsula by the Gulf of Mannar and the Palk Strait.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid my-3 py-3">
+            <div class="row ">
+                <div class="col-md-4 pb-4">
+                    <div class="box ">
+                        <div class="div1">
+                            <h2>Weather</h2>
+                            <p>Hikkaduwa Beach in Sri Lanka is a 
+                            hub of adventure and relaxation. 
+                            It's known for its exciting water
+                            sports and diverse food offerings. 
+                            The beach also houses numerous spa centers for relaxation,
+                            comfortable accommodations with various amenities, 
+                            and a range of tours for cultural and wildlife exploration.</p>
+                        </div>
+                        <div class="div2">
+                            <img src="image_video/1.jpeg" alt="for facilities">
+                        </div>
+                      </div>
+                    
+                </div>
+                <div class="col-md-4 pb-4">
+                    <div class="box ">
+                        <div class="div1">
+                            <h2>Facilities</h2>
+                            <p>Despite tourism boosting the local economy 
+                            and providing employment, it has led to environmental 
+                            issues and increased crime rates. While locals are known 
+                            for their warmth, instances of tourist harassment have been 
+                            reported. It's recommended to stay updated with reliable 
+                            sources before planning a visit.</p>
+                        </div>
+                        <div class="div2">
+                            <img src="image_video/2.jpeg" alt="for facilities">
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4 pb-4">
+                    <div class="box">
+                        <div class="div1">
+                            <h2>Current Situation</h2>
+                            <p>Hikkaduwa Beach in Sri Lanka is a haven for travelers, offering a mix of adventure and relaxation. Visitors 	can indulge in water sports like snorkeling, scuba diving, and surfing, or swim with sea turtles. Whale 	watching tours and glass-bottom boat rides offer unique experiences. For relaxation, beach yoga sessions 	are available, and the local cuisine, especially fresh seafood, is a must-try. The beach also boasts a 	vibrant nightlife and offers various tours for sightseeing and exploration.</p>
+                        </div>
+                        <div class="div2">
+                            <img src="image_video/3.jpeg" alt="for facilities">
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid my-3 py-3">
+            <div class="row ">
+                <div class="col-md-4 pb-4">
+                    <div class="box">
+                        <div class="div1">
+                            <h2>Don't do</h2>
+                            <p>In Hikkaduwa, Sri Lanka, travelers should avoid dark, deserted areas and secure their belongings. Be 	cautious of bag snatchers, especially when on the street. Keep money and passport in a body-belt for 	safety. Avoid crowded public places and large gatherings and . Lastly, use mosquito repellent to protect 	against dengue fever, especially during the monsoon season</p>
+                        </div>
+                        <div class="div2">
+                            <img src="image_video/4.jpeg" alt="for facilities">
+                        </div>
+                        
+                      </div>
+                </div>
+                <div class="col-md-4 pb-4">
+                    <div class="box">
+                        <div class="div1">
+                            <h2>Besttimes</h2>
+                            <p>The optimal time to visit Hikkaduwa, Sri Lanka, is during the months of January, February, and March, when 	the weather conditions are most favorable for visitors. If you prefer mildly warm weather, December through 	February is also a good time. On a daily basis, the best times to visit Hikkaduwa Beach are in the morning 	and late afternoon. Mornings offer less crowded conditions for activities like surfing and swimming, while 	late afternoons provide the opportunity to witness beautiful sunsets. </p>
+                        </div>
+                        <div class="div2">
+                            <img src="image_video/5.jpeg" alt="for facilities">
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4 pb-4">
+                    <div class="box">
+                        <div class="div1">
+                            <h2>Transpotation</h2>
+                            <p>For transportation around Hikkaduwa Beach in Sri Lanka, you have several options. You can enjoy a 	picturesque train journey from Colombo or use local buses. For more personalized service, consider using 	the Uber or PickMe apps, which offer a range of vehicles including bikes, three-wheelers, cars, and vans. 	However, be cautious about using local vehicles as they may charge significantly more than the actual value 	of the ride.</p>
+                        </div>
+                        <div class="div2">
+                            <img src="image_video/6.jpeg" alt="for facilities">
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-5 py-1">
+            
+        </div>
+        <div class="container-fluid my-5 py-5">
+            <div class="row">
+                <div class="col-md-4 pb-4">
+                    <div class="div_class1">
+                        <h2>Police Stations</h2>
+			            <a href="https://www.google.com/maps/search/police+station/@6.1303051,80.0592666,8749m/data=!3m1!1e3!4m8!2m7!3m6!1spolice+station!2sHikkaduwa+Beach!3s0x3ae177e2cbcb6ead:0xd0adba737d2f45d9!4m2!1d80.0990596!2d6.1377266?entry=ttu" title="map">
+			            <img src="image_video/Police.jpeg" alt="">
+			            </a>
+                    </div>
+                </div>
+                <div class="col-md-4 pb-4">
+                    <div class="div_class1">
+                        <h2>ATM</h2>
+			            <a href="https://www.google.com/maps/search/atm/@6.130303,80.0592666,10856m/data=!3m2!1e3!4b1!4m8">
+			            <img src="image_video/ATM.jpeg">
+			            </a>
+                    </div>
+                </div>
+                <div class="col-md-4 pb-4">
+                    <div class="div_class1">
+                        <h2>Bank</h2>
+			            <a href="https://www.google.com/maps/search/banks/@6.1302999,80.0592665,10856m/data=!3m2!1e3!4b1!4m8!2m7!3m6!1sbanks!2sHikkaduwa+Beach!3s0x3ae177e2cbcb6ead:0xd0adba737d2f45d9!4m2!1d80.0990596!2d6.1377266?entry=ttu">
+			            <img src="image_video/Bank.jpeg">
+			            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid my-5 py-5">
+            <div class="row">
+                <div class="col-md-4 pb-4">
+                    <div class="div_class1">
+                        <h2>Pharmacy</h2>
+			            <a href="https://www.google.com/maps/search/pharmacy/@6.134386,80.0866463,3424m/data=!3m1!1e3!4m8">
+			            <img src="image_video/Pharmacy.jpeg">
+			            </a>
+                    </div>
+                </div>
+                <div class="col-md-4 pb-4">
+                    <div class="div_class1">
+                        <h2>Food Stores</h2>
+			            <a href="https://www.google.com/maps/search/food+stores/@6.1343857,80.0866463,5428m/data=!3m2!1e3!4">
+			            <img src="image_video/Food Stores.jpeg">
+			            </a>
+                    </div>
+                </div>
+                <div class="col-md-4 pb-4">
+                    <div class="div_class1">
+                        <h2>Hotels</h2>
+			            <a href="https://www.google.com/maps/search/hotels/@6.1343849,80.0866462,5428m/data=!3m2!1e3!4b1!4m8!2m7!3m6!1shotels!2sHikkaduwa+Beach!3s0x3ae177e2cbcb6ead:0xd0adba737d2f45d9!4m2!1d80.0990596!2d6.1377266?entry=ttu">
+			            <img src="image_video/Hotels.jpeg">
+			            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-5 py-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="div_class1_1">
+                        <h2>Restaurants</h2>
+                        <a href="https://www.google.com/maps/search/restaurants/@6.1343842,80.0866462,5428m/data=!3m2!1e3!4b1!4m8!2m7!3m6!1srestaurants!2sHikkaduwa+Beach!3s0x3ae177e2cbcb6ead:0xd0adba737d2f45d9!4m2!1d80.0990596!2d6.1377266?entry=ttu">
+                        <img src="image_video/Restaurants.jpeg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="div_class1_1">
+                        <h2>Hospitals</h2>
+                        <a href="https://www.google.com/maps/search/government+hospital/@6.1318875,80.0615658,8516m/data=!3m1!1e3!4m8!2m7!3m6!1sgovernment+hospital!2sHikkaduwa+Beach!3s0x3ae177e2cbcb6ead:0xd0adba737d2f45d9!4m2!1d80.0990596!2d6.1377266?entry=ttu">
+                        <img src="image_video/hospitals.jpeg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <footer>
+            <div class="container-fluid footer">
+                <div class="footer_color">
+                    <div class="row">
+                        <div class="col-lg-3 pt-5 footer_link">
+                            <div>
+                                <a href="https://www.srilanka.travel/" target="_blank">Sri Lanka Travel</a>
+                                <a href="https://nationalholidayresorts.lk/" target="_blank">National Holiday Resorts</a>
+                                <a href="https://www.slithm.edu.lk/" target="_blank">Sri Lanka Institude of Tourism & Hotel Management</a>
+                                <a href="https://www.worldtravelawards.com/" target="_blank">Tourism Awards</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 pt-5 footer_link">
+                            <div>
+                                <a title="web"target="_blank" href="https://www.google.lk/maps/@7.8417541,80.7728782,7.75z" tabindex="0">Site Map</a>
+                                <a href="#">Complaints</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 pt-5">
+                            <div class="footer_description">
+                                <h3>Contact Us</h3>
+                                <h4>Address</h4>
+                                <p>
+                                    Sri Lanka Tourism Development
+                                    Authority
+                                    No 80.Galle road.
+                                    Colombo 03
+                                </p>
+                                <h4>Telephone</h4>
+                                <p>
+                                    +94 112345678
+                                    0123456789
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 pt-5">
+                            <div class="footer_description">
+                                <h4>Fax</h4>
+                                <p>
+                                    +94 112 444165/2426984
+                                </p>
+                                <h4>Email</h4>
+                                <p>
+                                    info@beautysrilanka.travel
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer><!--End the footer side-->
+
+
+
+
+
+
+
+    </body>
+</html><!--End the html page-->

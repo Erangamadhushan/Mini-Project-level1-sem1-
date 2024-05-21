@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en-US"><!--Start the html page-->
+    <head><!--Start head element-->
+        <meta charset="UTF-8"/>
+        <title>Start to Finish</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <meta name="description" content=""/>
+        <meta http-equiv="refresh" content="4000000000000"/><!--You must delete it after this page created-->
+        <!--attach links-->
+        
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="index.css" type="text/css"/>
+        <link rel="icon" type="text/x-icon" href="image_video/main_logo1.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+        <!--attach script files-->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript">
+            let search = document.getElementById("search-btn");
+            search.onclick = function() {
+                let searchbar = document.getElementById('main-search-bar');
+                searchbar.classList.toggle("active");
+            }
+            //==================================================================================
+        </script>
+        <script type="text/javascript">
+            function fixedButton() {
+                let value = window.scrollY;
+                if(value > 1200){
+                    document.getElementById('fixed_btn').style.display = "block";
+                }
+                else {
+                    document.getElementById('fixed_btn').style.display = "none";
+                }
+            }
+        </script>
+        <script src="app1.js"></script>
+    </head><!--End the head element-->
+    <body onscroll="fixedButton()" ><!--Start the body element-->
+        <a class="btn btn-danger fixed_btn px-4" href="#header" id="fixed_btn">Top</a>
+        <section class="bg-dark">
+            <div class="container-fluid py-3 bg-success"></div>
+                <header><!-- Start Header element-->
+                    <div class="container-fluid  bg-dark" id="header">
+                        <div class="row main_row text-white my-1">
+                            <div class="col-md-4 main_logo">
+                                <h3><span>S</span>tart <span>t</span>o <span>F</span>inish</h3>
+                                
+                            </div>
+                            <div class="col-md-8 nav_link">     <!--Navibar links-->
+                                <div><ul>
+                                    <li><a href="index.html" class="btn">Home</a></li>
+                                    <li><a href="index4.html" class="btn ">Help</a></li>
+                                    <li><a href="contact_us.html" class="btn ">Contact Us</a></li>
+                                    
+                                    
+                                </ul>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </header>
+                <!-- End the Header element -->
+
+            <!--Start page_content 01-->
+            <div class="container-fluid">
+                <div class="img_row">
+                    <div class="text_row box1" onload="myFunction1()">
+                        <h1 style="font-weight:900;"><span>S</span>tart <span>t</span>o <span>F</span>inish</h1>
+                        <p class="h5 ">Sri Lanka, historically known as Ceylon and officially the Democratic Socialist Republic of Sri Lanka, is an island country in South Asia. It lies in the Indian Ocean, southwest of the Bay of Bengal, separated from the Indian peninsula by the Gulf of Mannar and the Palk Strait.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display:table;clear:both;"></div>
+            <!--Start page_content 02-->
+            <div class="container container1 text-success box">
+                <div class="row">
+                    <div>
+                        <h2 class="text-white">Welcome to Start to Finish</h2>
+                        <p>See what's waiting for you on your next island getaway.
+                            Savour the unique experiences this island treasure has to offer.</p>
+                    </div>
+                    <div class="container-fluid page_content2">
+                        <div class="row ">
+                            <div  class="col-md-4">
+                                <img  src="image_video/sigiriya.jpg" alt=""/>
+                                
+                            </div>
+                            <div class="col-md-4">
+                                <img class="img_responsive" src="image_video/anuradhapura.jpg" alt=""/>
+                                
+                            </div>
+                            <div class="col-md-4">
+                                <img class="img_responsive" src="image_video/colombo_cidy.jpg" alt=""/>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--End the page_content 02-->
+
+            <!--End page_content 01-->
+            <div class="container-fluid p_relative py-2 text-success" >
+                <div class="container py-5 topic ">
+                    <h1>Are You ?</h1>
+                </div>
+                <div class="container bor_success">
+                    <div class="row row2">
+                        <div class="col-md-6 topics" >
+                            <h1>A Local citizen</h1>
+                            <div class="row_column">
+                                <div class="row_image ">
+                                    <img src="image_video/local_family.jpg" alt=""/>
+                                    
+                                </div>
+                                <div class="row_content">
+                                    <div class="">
+                                        <a href="Filter 2.html" class="btn btn-lg btn-success py-3 px-5">Local</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 topics" >
+                            <h1>A Foreigner</h1>
+                            <div class="row_column">
+                                <div class="row_image ">
+                                    <img src="image_video/foreign.jpg" alt=""/>
+                                    
+                                </div>
+                                <div class="row_content">
+                                    <div class="">
+                                        <a href="index2.html" class="btn btn-lg btn-success py-3 px-5">Foreign</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+
+
+
+            <!--Start the page_content 04-->
+            <div class="container container1 box">
+                <div class="row row1 text-success ">
+                    <h1 class="text-white">Sri Lankan Food Styles</h1>
+                    <p style="font-size:24px;padding-left:60px;">
+                        Sri Lankan cuisine is known for its particular combinations of herbs, spices, fish, vegetables, rices, and fruits. The cuisine is highly centered around many varieties of rice, as well as coconut which is a ubiquitous plant throughout the country.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 base_image">
+                        <img src="image_video/freshly-cooked-meal-pork-rice-generated-by-ai.jpg" alt="" style="min-height:325px;object-fit:cover;"/>
+                    </div>
+                    <div class="col-md-4 base_image">
+                        <img  src="image_video/group_img06.jpeg" style="min-height:325px;object-fit:cover;" alt=""/>
+                    </div>
+                    <div class="col-md-4 base_image">
+                        <img src="image_video/group_img07.jpeg" style="min-height:325px;object-fit:cover;" alt=""/>
+                    </div>
+                </div>
+                <div class="container py-5">
+                    <a href="food_styles.html" class="btn btn-outline-warning" style="font-size:26px;letter-spacing:1px;margin-inline:40px;">Read More....</a>
+                </div>
+            </div>
+            <!--End the page_content 04-->
+
+            <!--Start the page_content 06-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 page_content6_1 text-secondary">
+                        <h2>Explore Island Stories</h2>
+                        <p>Each place, and each smile in Sri Lanka has a story to tell. We have so much to share with you, so come along to our island in paradise!</p>
+                    </div>
+                    <div class="col-md-5 page_content6_2">
+                        <a href="https://the-shooting-star.com/offbeat-sri-lanka/" target="_blank" type="button" class="btn btn-outline-primary btn-lg">EXPLORE MORE..</a>
+                    </div>
+                </div>
+            </div>
+            <!--End the page_content 06-->
+            <!--Start the page_content 05-->
+            <div class="container-fluid bg-dark py-3 box">
+                <div class="row">
+                    <div class="col-md-6 div_class1 main_row_margin">
+                        <div>
+                            <img src="image_video/group_img01.jpg" alt=""/>
+                        </div>
+                        <div class="container-fluid main_row_margin">
+                            <div class="row">
+                                <div class="col-md-6 main_row_margin">
+                                    <img src="image_video/group_img02.jpg" alt=""/>
+                                </div>
+                                <div class="col-md-6 main_row_margin">
+                                    <img src="image_video/group_img04.jpg" alt=""/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main_row_margin">
+                            <img src="image_video/polonnaruwa.jpg" alt=""/>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 main_row_margin">
+                                    <img src="image_video/group_img03.jpg" style="min-height:275px;object-fit:cover;" alt=""/>
+                                </div>
+                                <div class="col-md-6 main_row_margin">
+                                    <img src="image_video/group_img05.jpg" style="min-height:275px;object-fit:cover;" alt=""/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid main_row_margin">
+                            <img src="image_video/kandy.jpg" alt=""/>
+                        </div>
+                        <div class="container-fluid main_row_margin">
+                            <img src="image_video/polonnaruwa1.jpg" style="min-height:560px;object-fit:cover;" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End the page_content 05-->
+
+            
+
+            <div class="container py-3 box">
+                <div class="text-secondary  beach_text">
+                    <h3 style="font-size:2.7rem;font-weight:bolder;">Sri Lankan Beach Sides</h3>
+                </div>
+            </div>
+
+
+
+            <!--Beach side description-->
+
+            <div class="container-fluid mt-2 pb-2 demo_class6 box">
+                
+                <div class="demo_class6_1">
+                    <div class="demo_class6_1_1">
+                        <div class="demo_class6_1_1_1">
+                            <img src="image_video/hikkaduwa_beach.jpg" alt=""/>
+                        </div>
+                        <div class="hide_headiner">
+                            <h2>Hikkaduwa Beach Side</h2>
+                        </div>
+                        <div class="demo_class6_1_1_2">
+                            <h2>Hikkaduwa Beach Side</h2>
+                            <p>Hikkaduwa is a popular surf spot on the Sri Lankan south-west coast. It attracts thousands of surfers between October/November and March/April. There are: shallow sand-bottomed waves, A-frame sections, harbourside waves, mellow whitewash to practice the pop, and fast left-hander waves.</p>
+                            <a type="button" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                    <div class="demo_class6_1_1">
+                        <div class="demo_class6_1_1_1">
+                            <img src="image_video/beach2.jpg" alt=""/>
+                        </div>
+                        <div class="hide_headiner">
+                            <h2>Thalpe Beach Side</h2>
+                        </div>
+                        <div class="demo_class6_1_1_2">
+                            <h2>Thalpe Beach Side</h2>
+                            <p>Thalpe Beach is a beach situated in the Southern province of Sri Lanka, close to the city of Galle. It is a popular destination among both locals and foreigners. There are vibrant shops, restaurant and various water sports related activities to do in the surrounding area of Thalpe.</p>
+                            <a type="button" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                    <div class="demo_class6_1_1">
+                        <div class="demo_class6_1_1_1">
+                            <img src="image_video/beach4.jpg" alt=""/>
+                        </div>
+                        <div class="hide_headiner">
+                            <h2>Jungle Beach Side</h2>
+                        </div>
+                        <div class="demo_class6_1_1_2">
+                            <h2>Jungle Beach Side</h2>
+                            <p>Jungle is a popular surf spot on the Sri Lankan south-west coast. It attracts thousands of surfers between October/November and March/April. There are: shallow sand-bottomed waves, A-frame sections, harbourside waves, mellow whitewash to practice the pop, and fast left-hander waves.</p>
+                            <a type="button" class="btn btn-outline-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container py-5 my-5 text-white bg-dark-50">
+                <div class="row">
+                    <div class="col-md-6">
+
+                    </div>
+                    <div class="col-md-6 py-3 border-success newslatter">
+                        <h4>Subscribe Our Newsletter</h4>
+                        <button type="button" class="btn btn-outline-danger px-3 mx-4" data-bs-toggle="modal" data-bs-target="#modal">Subscribe</button>
+                        <div class="modal fade" id="modal" >
+                            <div class="modal-dialog">
+                                <div class="modal-content bg-dark">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Subscribe Our Newsletter</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form method="post" action="action.php">
+                                            <label for="email">Email :</label>
+                                            <input type="text" name="email" id="name" title="input_field" placeholder="Enter email here..."/>
+                                            <input type="submit" Value="Subscribe"/>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Start footer side-->
+            
+
+            <footer>
+                <div class="container-fluid footer">
+                    <div class="footer_color">
+                        <div class="row">
+                            <div class="col-lg-3 pt-5 footer_link">
+                                <div>
+                                    <a href="https://www.srilanka.travel/" target="_blank">Sri Lanka Travel</a>
+                                    <a href="https://nationalholidayresorts.lk/" target="_blank">National Holiday Resorts</a>
+                                    <a href="https://www.slithm.edu.lk/" target="_blank">Sri Lanka Institute of Tourism & Hotel Management</a>
+                                    <a href="https://www.worldtravelawards.com/" target="_blank">Tourism Awards</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 pt-5 footer_link">
+                                <div>
+                                    <a target="_blank" href="https://www.google.lk/maps/@7.8417541,80.7728782,7.75z" tabindex="0">Site Map</a>
+                                    <a href="#">Complaints</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 pt-5">
+                                <div class="footer_description">
+                                    <h3>Contact Us</h3>
+                                    <h4>Address</h4>
+                                    <p>
+                                        Sri Lanka Tourism Development
+                                        Authority
+                                        No 80.Galle road.
+                                        Colombo 03
+                                    </p>
+                                    <h4>Telephone</h4>
+                                    <p>
+                                        +94 112345678
+                                        0123456789
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 pt-5">
+                                <div class="footer_description">
+                                    <h4>Fax</h4>
+                                    <p>
+                                        +94 112 444165/2426984
+                                    </p>
+                                    <h4>Email</h4>
+                                    <p>
+                                        info@beautysrilanka.travel
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer><!--End the footer side-->
+        </section>
+
+
+
+        <script defer src="app.js"></script>
+    </body><!--End the body element-->
+</html><!--End the html page-->
