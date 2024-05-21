@@ -491,7 +491,7 @@ header .search-bar-container .fa-search {
 .footer_link div a{
     display:grid;
     text-decoration:none;
-    padding:5px 40px;
+    padding:5px 20px;
     color:#fff;
 }
 .footer_link div a:hover{
@@ -504,7 +504,7 @@ header .search-bar-container .fa-search {
 }
 .footer_description p{
     color:yellow;
-    padding:20px;
+    padding:10px;
 }
 .footer_description h3,h4{
     padding:15px;
@@ -572,7 +572,7 @@ header .search-bar-container .fa-search {
     .container-fluid .img_row .text_row {
         width:100%;
         left:0;
-        top:0;
+        top:10;
         padding:10px;
     }
 } 
