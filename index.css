@@ -6,14 +6,14 @@
     
 }
 body{
-    max-width:100%;
+    
 }
 img {
     max-width:100%;
 }
 section {
     position:relative;
-    padding:1px;
+    
 }
 .container-fluid  {
     margin:0;
@@ -569,6 +569,12 @@ header .search-bar-container .fa-search {
 
 @media screen and (max-width:560px) {
     .demo_class6_1 {flex-direction:row;}
+    .container-fluid .img_row .text_row {
+        width:100%;
+        left:0;
+        top:0;
+        padding:10px;
+    }
 } 
 @media screen and (max-width:1500px) {
     .demo_class6_1{display:none;}
