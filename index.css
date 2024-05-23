@@ -565,6 +565,10 @@ header .search-bar-container .fa-search {
     opacity:1;
 }
 .main_navbar button {
+    font-size:36px;
+    display:none;
+}
+.main_navbar > div {
     display:none;
 }
 
@@ -572,11 +576,14 @@ header .search-bar-container .fa-search {
 @media screen and (max-width:560px) {
     .demo_class6_1 {flex-direction:row;}
     .container-fluid .img_row .text_row {
-        width:95%;
+        width:90%;
         margin:auto;
-        left:0;
-        top:5;
+        left:5%;
+        top:10%;
         padding:10px;
+    }
+    .container-fluid .img_row .text_row h1{
+        font-size:50px;
     }
     .col-md-8.nav_link.nav_link ul{
         display:none;
