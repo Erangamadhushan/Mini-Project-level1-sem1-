@@ -570,7 +570,7 @@ header .search-bar-container .fa-search {
 @media screen and (max-width:560px) {
     .demo_class6_1 {flex-direction:row;}
     .container-fluid .img_row .text_row {
-        width:100%;
+        width:95%;
         left:0;
         top:10;
         padding:10px;
