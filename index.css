@@ -564,17 +564,27 @@ header .search-bar-container .fa-search {
     transform:translateY(0);
     opacity:1;
 }
-
+.main_navbar button {
+    display:none;
+}
 
 
 @media screen and (max-width:560px) {
     .demo_class6_1 {flex-direction:row;}
     .container-fluid .img_row .text_row {
         width:95%;
+        margin:auto;
         left:0;
-        top:10;
+        top:5;
         padding:10px;
     }
+    .col-md-8.nav_link.nav_link ul{
+        display:none;
+    }
+    .main_navbar button {
+        display:block;
+    }
+    
 } 
 @media screen and (max-width:1500px) {
     .demo_class6_1{display:none;}
