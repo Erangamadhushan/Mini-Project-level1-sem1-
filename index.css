@@ -597,8 +597,9 @@ header .search-bar-container .fa-search {
     .div {
         top:5%;
     }
-    .img_row .text_row {
+     .container-fluid .img_row .text_row {
         width:85%;
+         margin:auto;
         top:10%;
     }
 }
