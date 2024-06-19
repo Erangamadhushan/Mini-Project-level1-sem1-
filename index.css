@@ -597,6 +597,10 @@ header .search-bar-container .fa-search {
     .div {
         top:5%;
     }
+    .img_row .text_row {
+        width:70%;
+        top:10%;
+    }
 }
 @media screen and(max-width:768px) {
     .main_navbar button {
