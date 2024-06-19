@@ -588,11 +588,16 @@ header .search-bar-container .fa-search {
     .col-md-8.nav_link.nav_link ul{
         display:none;
     }
-/*     .main_navbar button {
+     .main_navbar button {
         display:block;
-    } */
+    } 
     
 } 
+@media screen and(max-width:992px) {
+    .div {
+        top:5%;
+    }
+}
 @media screen and(max-width:768px) {
     .main_navbar button {
         display:block;
