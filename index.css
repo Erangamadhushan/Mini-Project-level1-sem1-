@@ -412,7 +412,15 @@ header .search-bar-container .fa-search {
     font-size:48px;
 }
 
- .item {
+.beachSide {
+    padding-block:50px;
+    min-height:100vh;
+    background-image: url(image_video/beach_side.jpg);
+    background-attachment:fixed;
+    background-size:cover;
+}
+
+.item {
     width:90%;
     margin:0 auto;
     min-height:60vh;
