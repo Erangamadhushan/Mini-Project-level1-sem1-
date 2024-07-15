@@ -413,73 +413,7 @@ header .search-bar-container .fa-search {
 }
 
 
-.demo_class6 {
-    background-image:url(image_video/beach_side.jpg);
-    min-height:120vh;
-    position:relative;
-}
-.demo_class6_1 {
-    position:relative;
-    width:100%;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
-    align-items:center;
-    min-height:120vh;
-}
-.demo_class6_1_1{
-    width:30%;
-    position:relative;
-    height:400px;
-    background:#ffffffcc;
-    border-radius:10px;
-    transition:0.4s;
-    
-    
-}
-.demo_class6_1_1:hover .hide_headiner {
-    transform:scale(0);
-}
-.demo_class6_1_1_1 {
-    position:relative;
-    width:80%;
-    margin:auto;
-    top:30px;
-    height:320px;
-    border-radius:8px;
-    overflow:hidden;
-    transition:0.4s;
-    transform:scale(1);
 
-}
-
-.demo_class6_1_1_2 {
-    position:absolute;
-    top:100px;
-    width:340px;
-    height:auto;
-    margin-inline:50px;
-    text-align: center;
-    padding:35px;
-    transition:0.4s;
-    transition-delay:0.1s;
-    transform:scale(0);
-    
-}
-.demo_class6_1_1:hover {
-    height:560px;
-}
-.demo_class6_1_1:hover .demo_class6_1_1_2 {
-    top:120px;
-    transform:scale(1);
-}
-.demo_class6_1_1_1 img{
-    position:absolute;
-}
-.demo_class6_1_1:hover .demo_class6_1_1_1 {
-    top:-100px;
-    transform:scale(0.75);
-}
 .footer {
     min-height:50vh;
     background-image:url(image_video/footer_image.jpg);
