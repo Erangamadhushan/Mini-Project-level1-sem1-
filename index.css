@@ -411,7 +411,12 @@ header .search-bar-container .fa-search {
     font-weight:400;
     font-size:48px;
 }
-
+.beachSide {
+    background-image:url(image_video/beach_side.jpg);
+    padding-block:80px;
+    background-attachment:fixed;
+    
+}
  .item {
     width:90%;
     margin:0 auto;
