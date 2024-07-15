@@ -412,6 +412,44 @@ header .search-bar-container .fa-search {
     font-size:48px;
 }
 
+.item {
+    width:90%;
+    margin:0 auto;
+    min-height:40vh;
+    border-radius:.8em;
+    overflow-x:hidden;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+}
+.item .images {
+    width:100%;
+    height:auto;
+    max-height:200px;
+    overflow-x:hidden;
+    transition:all .4s;
+}
+.item .images img {
+    width:80%;
+    height:60%;
+    margin:0 auto;
+    background-size:cover;
+    /*object-fit:cover;*/
+}
+.item:hover .images {
+    transform: translateY(-30px)scale(.8);
+    transition:all .4s;
+}
+.item .topic {
+    width:100%;
+    min-height:50px;
+    font-size:2.5vw;
+    font-family:"Lato",sans-serif;
+    padding:25px;
+}
+.item .description {
+    padding:25px;
+}
 
 
 .footer {
