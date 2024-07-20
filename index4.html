@@ -15,6 +15,10 @@
                 padding:0;
                 box-sizing:border-box;
             }
+            body {
+                max-width:100%;
+                overflow-x:hidden;
+            }
             .box{
                 width:90%;
                 position:relative;
@@ -169,9 +173,20 @@
                 text-transform:uppercase;
                 display:none;
             }
+            .nav_link button {
+                display:none;
+            }
             @media screen and (max-width:560px) {
                 .demo_class6_1 {flex-direction:row;}
             } 
+            @media screen and (max-width:768px) {
+                .col-md-8.nav_link ul {
+                    display:none;
+                }
+                .nav_link button {
+                    display:block;
+                }
+            }
         </style>
         <script type="text/javascript">
             function fixedButton() {
@@ -200,7 +215,24 @@
                             <li><a href="index4.html" class="btn ">Help</a></li>
                             <li><a href="contact_us.html" class="btn ">Contact Us</a></li>
                         </ul>
+                        <button type="button" class ="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#demo">&#9776;</button>
                     </div>
+
+                    <!--This part edited to mobile devices 24/06/05-->
+
+                    <div class="offcanvas offcanvas-start text-bg-dark" id="demo">
+                        <div class="offcanvas-header">
+                            <h3><span>S</span>tart <span>t</span>o <span>F</span>inish</h3>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="d-flex flex-column">
+                                <a href="index.html" class="btn btn-dark btn-block text-white py-3">Home</a>
+                                <a href="index4.html" class="btn btn-dark btn-block text-white py-3">Help</a>
+                                <a href="contact_us.html" class="btn btn-dark btn-block text-white py-3">Contact Us</a>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
             </div>
         </header>

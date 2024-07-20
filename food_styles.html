@@ -44,12 +44,12 @@
                 color:coral;
             }
 
-            .col-md-8.nav_link ul {
+            .col-md-8 .nav_link ul {
                 display:flex;
                 justify-content:flex-start;
                 align-items:center;
             }
-            .col-md-8.nav_link ul li{
+            .col-md-8 .nav_link ul li{
 
                 list-style:none;
                 display:flex;
@@ -62,7 +62,7 @@
             .topics{
                 text-align:center;
             }
-            .col-md-8.nav_link ul li a{
+            .col-md-8 .nav_link ul li a{
                 text-decoration:none;
                 display:flex;
                 justify-content:space-around;
@@ -73,7 +73,7 @@
                 margin-block:6px;
 
             }
-            .col-md-8.nav_link ul li a:hover{
+            .col-md-8 .nav_link ul li a:hover{
                 color:coral;
                 border-bottom:2px solid coral;
             }
@@ -97,6 +97,17 @@
                 transform:translateX(0);
                 opacity:1;
             }
+            .col-md-8 .nav_link button {
+                display:none;
+            }
+            @media screen and (max-width:768px) {
+                .col-md-8 .nav_link ul{
+                    display:none;
+                }
+                .col-md-8 .nav_link button {
+                    display:block;
+                }
+            }
         </style>
     </head>
     <body>
@@ -108,20 +119,33 @@
                         <h3><span>S</span>tart <span>t</span>o <span>F</span>inish</h3>
                         
                     </div>
-                    <div class="col-md-8 nav_link">     <!--Navibar links-->
-                        <div><ul>
-                            <li><a href="index.html" class="btn">Home</a></li>
-                            <li><a href="index4.html" class="btn ">Help</a></li>
-                            <li><a href="contact_us.html" class="btn ">Contact Us</a></li>
-                            
-                            
-                        </ul>
+                    <div class="col-md-8 ">     <!--Navibar links-->
+                        <div class="nav_link">
+                            <ul>
+                                <li><a href="index.html" class="btn">Home</a></li>
+                                <li><a href="index4.html" class="btn ">Help</a></li>
+                                <li><a href="contact_us.html" class="btn ">Contact Us</a></li> 
+                            </ul>
+                            <button type="button" class ="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#demo">&#9776;</button>
                         </div>
-                        
+
+                        <!--This part edited to mobile devices 24/06/05-->
+
+                        <div class="offcanvas offcanvas-start text-bg-dark" id="demo">
+                            <div class="offcanvas-header">
+                                <h3><span>S</span>tart <span>t</span>o <span>F</span>inish</h3>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="d-flex flex-column">
+                                    <a href="#" class="btn btn-dark btn-block text-white py-3">Home</a>
+                                    <a href="index4.html" class="btn btn-dark btn-block text-white py-3">Help</a>
+                                    <a href="contact_us.html" class="btn btn-dark btn-block text-white py-3">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
                 </div>
-                
             </div>
             
         </header>

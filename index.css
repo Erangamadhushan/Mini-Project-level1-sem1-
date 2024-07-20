@@ -377,7 +377,7 @@ header .search-bar-container .fa-search {
     left:0;
     text-align:center;
     background:transparent;
-    min-height:290px;
+    min-height:40vh;
     transform:translateX(-110%)scale(0);
     transition:transform 0.4s;
     transition-delay:0.2s;
