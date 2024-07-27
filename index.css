@@ -50,6 +50,18 @@ section {
 .topics{
     text-align:center;
 }
+.card {
+    min-height:360px;
+    position:relative;
+}
+.card a {
+    position:absolute;
+    bottom:25px;
+}
+.card .card-img-top {
+    max-height:200px;
+    object-fit:cover;
+}
 
 .col-md-8 .nav_link ul li a{
     text-decoration:none;
