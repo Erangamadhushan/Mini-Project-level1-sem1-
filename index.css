@@ -563,7 +563,7 @@ header .search-bar-container .fa-search {
         font-size:50px;
     }
     .col-md-8 .nav_link button {
-        display:none;
+        display:block;
     }
     .col-md-8 .nav_link ul {
         display:none;
