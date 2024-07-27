@@ -546,9 +546,9 @@ header .search-bar-container .fa-search {
     display:none;
 }
 
-/* .col-md-8 .nav_link button {
+.col-md-8 .nav_link button {
     display:none;
-} */
+}
 
 @media screen and (max-width:560px) {
     .demo_class6_1 {flex-direction:row;}
