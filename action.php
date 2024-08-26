@@ -1,4 +1,4 @@
-<?php
+ <?php
     if($_SERVER['REQUEST_METHOD'] == "POST") {
     function testinput($data) {
         $data = trim($data);
@@ -14,7 +14,7 @@
     else {
         $message = "Input Information is recorded !";
     }
-
+    
  
 }
 
