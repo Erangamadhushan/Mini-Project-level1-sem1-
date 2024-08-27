@@ -87,15 +87,13 @@
 
             }
             .box {
-                transform:translateX(200%);
+                transform:translateY(100px);
                 opacity:0;
                 transition:transform 1s ease,opacity 1.3s ease;
             }
-            .box:nth-of-type(even) {
-                transform:translateX(-200%);
-            }
+            
             .box.show {
-                transform:translateX(0);
+                transform:translateY(0);
                 opacity:1;
             }
             .col-md-8 .nav_link button {
@@ -124,7 +122,7 @@
                         <div class="nav_link">
                             <ul>
                                 <li><a href="index.html" class="btn">Home</a></li>
-                                <li><a href="index4.html" class="btn ">Help</a></li>
+                                <li><a href="index4.html" class="btn ">About</a></li>
                                 <li><a href="contact_us.html" class="btn ">Contact Us</a></li> 
                             </ul>
                             <button type="button" class ="btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#demo">&#9776;</button>
@@ -140,7 +138,7 @@
                             <div class="offcanvas-body">
                                 <div class="d-flex flex-column">
                                     <a href="#" class="btn btn-dark btn-block text-white py-3">Home</a>
-                                    <a href="index4.html" class="btn btn-dark btn-block text-white py-3">Help</a>
+                                    <a href="index4.html" class="btn btn-dark btn-block text-white py-3">About</a>
                                     <a href="contact_us.html" class="btn btn-dark btn-block text-white py-3">Contact Us</a>
                                 </div>
                             </div>
