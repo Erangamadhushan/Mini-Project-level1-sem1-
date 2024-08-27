@@ -18,7 +18,8 @@
         border-radius: 30px;
         padding: 20px;
         height: 78vh;
-        width: 80vw;
+        width:95%;
+        max-width:800px;
         display: flex;
         flex-direction: column;
         justify-content: justify;
@@ -47,6 +48,13 @@
         border-radius: 17px;
 
     }
+    select {
+        padding:15px;
+    }
+    input[type='button'],input[type='reset'] {
+        padding: 10px;
+        min-width:120px;
+    }
    input[name="search"]{
         height: 6vh;
         width: 45vw;
@@ -56,6 +64,7 @@
         font-family:sans-serif;
         color: aliceblue;
         font-size:2vw;
+        padding:5px;
         padding-left: 4px;
         background-color: transparent;
         
