@@ -48,9 +48,7 @@
         border-radius: 17px;
 
     }
-    select {
-        padding:15px;
-    }
+    
     input[type='button'],input[type='reset'] {
         padding: 10px;
         min-width:120px;

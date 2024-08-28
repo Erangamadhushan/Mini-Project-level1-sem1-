@@ -152,6 +152,9 @@ section {
     transform:translateX(0%);
     
 }
+#demoBtn {
+    display:none;
+}
 
 .footer {
     min-height:50vh;
@@ -190,4 +193,10 @@ section {
     .main_navbar button {
         display:block;
 }
+    .col-md-8.nav_link ul {
+        display: none;
+    }
+    .col-md-8.nav_link #demoBtn {
+        display:block;
+    }
 }
