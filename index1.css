@@ -193,10 +193,10 @@ section {
     .main_navbar button {
         display:block;
 }
-    .col-md-8.nav_link ul {
+    .nav_link ul {
         display: none;
     }
-    .col-md-8.nav_link #demoBtn {
+    #demoBtn {
         display:block;
     }
 }
