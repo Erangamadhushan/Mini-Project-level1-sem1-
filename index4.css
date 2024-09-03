@@ -14,21 +14,21 @@ body {
     margin:auto;
     padding:20px;
     border:none;
-    box-shadow: 8px 10px  15px rgba(126, 102, 102, 0.2);
+    box-shadow: 2px 2px 3px rgba(126, 102, 102, 0.2) ;
     border-radius:12px;
     transition:0.4s;
 }
 .box:hover {
-    box-shadow:8px 11px 20px rgba(0,0,0,0.8);
+    box-shadow:4px 4px 8px rgba(0,0,0,0.8);
     color:rgb(47, 16, 223);
 }
 
 .box h2{
     text-align:center;
-    transition:letter-spacing 1s;
+    
 }
 .box:hover h2{
-    letter-spacing:2px;
+    
     font-weight:bolder;
 }
 .box img{

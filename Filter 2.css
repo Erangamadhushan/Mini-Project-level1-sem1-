@@ -49,10 +49,10 @@
 
     }
     
-    input[type='button'],input[type='reset'] {
+    /* input[type='button'],input[type='reset'] {
         padding: 10px;
         min-width:120px;
-    }
+    } */
    input[name="search"]{
         height: 6vh;
         width: 45vw;
