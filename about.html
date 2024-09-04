@@ -3,10 +3,103 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>About Start To Finish</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+            * {
+                margin:0;
+                padding:0;
+                box-sizing:border-box;
+            }
+            body {
+                
+                background-image: url(image_video/about_background.png);
+                background-size: cover;
+            }
+            ::-webkit-scrollbar {
+                width:8px;
+            }
+            ::-webkit-scrollbar-track {
+                background-color:chartreuse;
+                
+            }
+            ::-webkit-scrollbar-thumb {
+                border-radius:10px;
+                background-color:rgb(231, 62, 62);
+            }
+            img {
+                width:100%;
+            }
+            .container-fluid {
+                background-color:#000000db;
+                min-height:100vh;
+            }
+            h2 {
+                font-weight:900;
+            }
+            h2>span {
+                color:coral;
+            }
+            .box {
+                opacity:0;
+                transform:translateY(100px);
+                transition:transform 3s;
+            }
+            .box.show {
+                opacity:1;
+                transform:translateY(0);
+                transition:transform .6s;
+            }
+        </style>
     </head>
-    <body>
-        
+    <body class="bg-dark">
+        <div class="container-fluid ">
+            <div class="row d-flex justify-content-between box">
+                <div class="col-md-9 my-3">
+                    <h2 class="text-center text-white display-3 text-uppercase"><span>S</span>tart <span>T</span>o <span>F</span>inish</h2>
+                </div>
+                <div class="col-md-3 my-5">
+                    <button type="button" class="btn btn-lg btn-outline-light">Back Home</button>
+                    <a href="#" class="btn btn-lg btn-outline-light">Documentation</a>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around ">
+                <div class="col-md-5 border border-white rounded px-3 py-4 mb-5 box">
+                    <div class="text-white-50 ">
+                        <h1 class="text-center ">Vision</h1>
+                        <p class="h4">
+                            To inspire and empower people to explore the world, create unforgettable memories, and foster a deeper understanding of diverse cultures through seamless and accessible travel experiences.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-5 border border-white rounded px-3 py-4 mb-5 box">
+                    <div class="text-white-50">
+                        <h1 class="text-center">Mission</h1>
+                        <p class="h4">
+                            Our mission is to be the ultimate travel companion, providing comprehensive, reliable, and personalized resources that cater to every traveler's needs.
+                            We aim to simplify the journey from planning to booking, offering expert advice, curated experiences, and innovative tools that turn dream destinations into reality.
+                            Through our commitment to sustainability and cultural respect, we strive to make travel not just an adventure, but a force for positive change.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-1 d-flex justify-content-center">
+                <div class="col-md-9">
+                    <p class="h4  text-white-50">
+                        About
+                        We want to create a one platform that helps you plan your trip to any destination. 
+                        Whether you are a local or a foreign traveler, you will find everything you need to know 
+                        about your chosen place. You will get a general overview of Sri Lanka and its current 
+                        situation. You will learn about the weather, the attractions, and the dos and don'ts of 
+                        each location. You will also discover the best ways to get around and the nearest 
+                        facilities like police stations, ATMs, banks, pharmacies, and more. Our platform is your 
+                        one-stop guide to enjoy your travel experience.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="about.js"></script>
     </body>
 </html>
 <!--End the about page here -->
