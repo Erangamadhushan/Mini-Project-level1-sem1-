@@ -122,21 +122,21 @@ width:100%;
     margin:auto;
     border:none;
     border-radius:10px;
-    box-shadow:4px 6px 12px gray;
+    border:1px solid yellowgreen;
 }
-.div_class1:hover {
-    box-shadow:5px 7px 20px gray;
+.div_class1 a>img {
+    margin-inline:25%;
 }
+
 .div_class1_1 {
     width:70%;
     margin:auto;
     border:none;
     border-radius:10px;
-    box-shadow:4px 6px 12px gray;
+    border:1px solid greenyellow;
+   
 }
-.div_class1_1:hover {
-    box-shadow:5px 7px 20px gray;
-}
+
 .div_class1 h2{
     text-align:center;
 }

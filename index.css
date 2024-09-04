@@ -472,9 +472,9 @@ header .search-bar-container .fa-search {
     margin:10px auto 0;
 }
 
-.item:hover .images {
-    transform: translateY(-40px)scale(.85);
-    transition:all .4s;
+.item:hover .images,.item:hover.topic {
+    transform: translateY(-60px)scale(.85);
+    transition:all .2s;
 }
 .item .topic {
     width:100%;
@@ -665,7 +665,10 @@ hr {
     font-size:1.2em;
     padding:20px;
 }
-
+.newslatter_image img{
+    width:20%;
+    margin-inline:40%;
+}
 @media screen and (max-width:560px) {
     .demo_class6_1 {flex-direction:row;}
     .container-fluid .img_row .text_row {
