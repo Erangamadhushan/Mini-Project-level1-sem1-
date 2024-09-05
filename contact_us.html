@@ -20,6 +20,17 @@
         *, *:before, *:after {
           box-sizing: inherit;
         }
+        ::-webkit-scrollbar {
+            width:8px;
+        }
+        ::-webkit-scrollbar-track {
+            background-color:#098740;
+            
+        }
+        ::-webkit-scrollbar-thumb {
+            border-radius:10px;
+            background-color:rgb(231, 62, 62);
+        }
 
         .column {
           float: left;
@@ -31,6 +42,10 @@
         .card {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           margin: 8px;
+          
+        }
+        input {
+          border:none;
         }
 
         .about-section {
@@ -79,6 +94,13 @@
             font-size:36px;
             
         }
+        .team {
+          background-image:url('image_video/background_image.png');
+          background-color:black;
+          background-position:center;
+          mix-blend-mode:multiply;
+        }
+        
         @keyframes animate {
             0%{
                 color:#fff;
@@ -105,110 +127,123 @@
     </head>
     <body>
 
-    <div class="about-section bg-dark">
-      <h1>Contact Us</h1>
-      <p>about who we are and what we do.</p>
-      <p id="about_p"> We're here to answer any questions you may have.</p>
-      <a href="index.html" style="margin-block-start:30px;">Back to home page</a>
-    </div>
-
-    <h2 style="text-align:center"  class="heading bg-success text-">Our Team</h2>
-    <div class="container-fluid bg-dark py-4">
-      <div class="container">
-        <div class="row d-flex justify-content-center  pt-4">
-            <div class="col-md-3">
-                <div class="card">
-                  <img src="image_video/avotor.png" alt="Ravindu" style="width:60%;margin-inline:20%;padding-top:30px;">
-                  <div class="container">
-                    <form class="d-flex flex-column py-3 gap-2" method="post" action="contact.php">
-                    <h2>Ravindu </h2>
-                    <p class="title">Team Leader</p>
-                    <label for="email" title="email"></label>
-                    <input type="text" name="email" value="ravindu435@gmail.com" readonly/>
-                    <input class="btn btn-outline-primary btn-lg " type="submit" Value="Contact"/>
-                    </form>
+      
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 bg-dark text-white ">
+                <div class="row ">
+                    <img src="image_video/main_logo1.png" style="width:70%; margin:10% 15% 0;" alt="logo"/>
+                </div>
+                <div class="row">
+                    <div class="d-flex justify-content-center align-items-center flex-column pt-5">
+                      <h2>Contact Us</h2>
+                      <p>About who we are and what we do</p>
+                      <p>We're here to answer any question you may have</p>
+                      <a href="index.html" class="btn btn-outline-primary text-uppercase btn-lg">Back to home page</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 team">
+                <div class="bg-success">
+                  <h2 class="text-center py-2 mt-3">Our Team</h2>
+                </div>
+                <div class="row d-flex justify-content-between">
+                    <div class="col-sm-6 col-xl-6 col-xxl-4">
+                        <div class="card">
+                            <img src="image_video/avotor.png" alt="Ravindu" style="width:60%;margin-inline:20%;padding-top:30px;">
+                            <div class="container">
+                              <form class="d-flex flex-column py-3 gap-2" method="post" action="contact.php">
+                              <h2>Ravindu </h2>
+                              <p class="title">Team Leader</p>
+                              <label for="email" title="email"></label>
+                              <input type="text" name="email" value="ravindu435@gmail.com" readonly/>
+                              <input class="btn btn-primary btn-lg " type="submit" Value="Contact"/>
+                              </form>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-6 col-xxl-4">
+                        <div class="card">
+                            <img src="image_video/avotor.png" alt="Thareesha" style="width:60%;margin-inline:20%;padding-top:30px;">
+                            <div class="container">
+                              <form class="d-flex flex-column py-3 gap-2" method="post" action="contact.php">
+                              <h2>Thareesha</h2>
+                              <p class="title">Team Member</p>
+                              <label for="email"></label>
+                              <input type="text" name="email" value="thareesha32@gmail.com" readonly/>
+                              <input class="btn btn-primary btn-lg " type="submit" Value="Contact"/>
+                              </form>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-6 col-xxl-4">
+                        <div class="card">
+                            <img src="image_video/avotor_w.png" alt="Thathsara" style="width:60%;margin-inline:20%;padding-top:30px;">
+                            <div class="container">
+                              <form class="d-flex flex-column py-3 gap-2" method="post" action="contact.php">
+                              <h2>Thathsara</h2>
+                              <label for="email"></label>
+                              <p class="title">Team Member</p>
+                              <input type="text" name="email" value="thathsara987@gmail.com" readonly/>
+                              <input class="btn btn-primary btn-lg " type="submit" Value="Contact"/>
+                              </form>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-6 col-xxl-4">
+                      <div class="card">
+                          <img src="image_video/avotor.png" alt="Themiya" style="width:60%;margin-inline:20%;padding-top:30px;">
+                          <div class="container">
+                            <form class="d-flex flex-column py-3 gap-2" method="post" action="contact.php">
+                            <h2>Themiya</h2>
+                            <p class="title">Team Member</p>
+                            <label for="email"></label>
+                            <input type="text" name="email" value="themiya23@gmail.com" readonly/>
+                            <input class="btn btn-primary btn-lg " type="submit" Value="Contact"/>
+                          </form>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-sm-6 col-xl-6 col-xxl-4">
+                      <div class="card">
+                          <img src="image_video/avotor_w.png" alt="Dinushika" style="width:60%;margin-inline:20%;padding-top:30px;">
+                          <div class="container">
+                            <form class="d-flex flex-column py-3 gap-2" method="post" action="contact.php">
+                            <h2>Dinushika</h2>
+                            <p class="title">Team Member</p>
+                            <label for="email"></label>
+                            <input type="text" name="email" value="dinushika123@gmail.com" readonly/>
+                            <input class="btn btn-primary btn-lg " type="submit" Value="Contact"/>
+                            </form>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-sm-6 col-xl-6 col-xxl-4 ">
+                      <div class="card">
+                          <img src="image_video/avotor.png" alt="Eranga" style="width:60%;margin-inline:20%;padding-top:30px;" >
+                          <div class="container">
+                            <form class="d-flex flex-column py-3 gap-2" method="post" action="contact.php">
+                            <h2>Eranga</h2>
+                            <p class="title">Team Member</p>
+                            <label for="email"></label>
+                            <input type="text" name="email" value="eranga345@gmail.com" readonly/>
+                            <input class="btn btn-primary btn-lg " type="submit" Value="Contact"/>
+                            </form>
+                          </div>
+                        </div>
                   </div>
                 </div>
-              
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <img src="image_video/avotor.png" alt="Thareesha" style="width:60%;margin-inline:20%;padding-top:30px;">
-                <div class="container">
-                  <form class="d-flex flex-column py-3 gap-2" method="post" action="contact.php">
-                  <h2>Thareesha</h2>
-                  <p class="title">Team Member</p>
-                  <label for="email"></label>
-                  <input type="text" name="email" value="thareesha32@gmail.com" readonly/>
-                  <input class="btn btn-outline-primary btn-lg " type="submit" Value="Contact"/>
-                  </form>
+                <div class="row">
+                    
                 </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card">
-                <img src="image_video/avotor_w.png" alt="Thathsara" style="width:60%;margin-inline:20%;padding-top:30px;">
-                <div class="container">
-                  <form class="d-flex flex-column py-3 gap-2" method="post" action="contact.php">
-                  <h2>Thathsara</h2>
-                  <label for="email"></label>
-                  <p class="title">Team Member</p>
-                  <input type="text" name="email" value="thathsara987@gmail.com" readonly/>
-                  <input class="btn btn-outline-primary btn-lg " type="submit" Value="Contact"/>
-                  </form>
-                </div>
-              </div>
+    
             </div>
         </div>
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-3">
-            <div class="card">
-              <img src="image_video/avotor.png" alt="Themiya" style="width:60%;margin-inline:20%;padding-top:30px;">
-              <div class="container">
-                <form class="d-flex flex-column py-3 gap-2" method="post" action="contact.php">
-                <h2>Themiya</h2>
-                <p class="title">Team Member</p>
-                <label for="email"></label>
-                <input type="text" name="email" value="themiya23@gmail.com" readonly/>
-                <input class="btn btn-outline-primary btn-lg " type="submit" Value="Contact"/>
-              </form>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card">
-              <img src="image_video/avotor_w.png" alt="Dinushika" style="width:60%;margin-inline:20%;padding-top:30px;">
-              <div class="container">
-                <form class="d-flex flex-column py-3 gap-2" method="post" action="contact.php">
-                <h2>Dinushika</h2>
-                <p class="title">Team Member</p>
-                <label for="email"></label>
-                <input type="text" name="email" value="dinushika123@gmail.com" readonly/>
-                <input class="btn btn-outline-primary btn-lg " type="submit" Value="Contact"/>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card">
-              <img src="image_video/avotor.png" alt="Eranga" style="width:60%;margin-inline:20%;padding-top:30px;" >
-              <div class="container">
-                <form class="d-flex flex-column py-3 gap-2" method="post" action="contact.php">
-                <h2>Eranga</h2>
-                <p class="title">Team Member</p>
-                <label for="email"></label>
-                <input type="text" name="email" value="eranga345@gmail.com" readonly/>
-                <input class="btn btn-outline-primary btn-lg " type="submit" Value="Contact"/>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
     </body>
 </html>
+
 
 
 
