@@ -134,6 +134,12 @@ width:100%;
     border:none;
     border-radius:10px;
     border:1px solid yellowgreen;
+    transition:transform .2s;
+}
+.div_class1:hover {
+    transform:translateY(-30px);
+    border:2px solid yellowgreen;
+    box-shadow:5px 5px 5px yellowgreen;
 }
 .div_class1 a>img {
     margin-inline:25%;

@@ -204,7 +204,7 @@ section {
     .main_navbar button {
         display:block;
 }
-    .nav_link ul {
+.col-md-8.nav_link ul  {
         display: none;
     }
     #demoBtn {
