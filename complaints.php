@@ -34,6 +34,43 @@
                 </div>
             </form>
         </div>
+        <?php
+            if($_SERVER['REQUEST_METHOD'] == 'POST') {
+                function testinput($data) {
+                    $data = trim($data);
+                    $data = htmlspecialchars($data);
+                    $data = stripslashes($data);
+                    return $data;
+                }
+
+                $Name = testinput($_REQUEST['name']);
+                $email = testinput($_REQUEST['email']);
+                $content = testinput($_REQUEST['reason']);
+
+                if(!preg_match("/^[a-zA-Z-' ']*$/",$userName)) {
+                    echo "Invalid userName";
+                    header("Location:index.html");
+                }
+                if(!filter_var($email,FILTER_VALIDATE_EMAIL)) {
+                    echo "<script>window.alert('Something went wrong !');</script>";
+                    header("Location:index.html");
+                }
+
+                $sql = "INSERT INTO customer(name,email,reason)
+                VALUES ('$userName','$email','$content')";
+                if(mysqli_query($connection,$sql)) {
+                    echo "<script>window.alert('Data inserted successfully');</script>";
+                    header("Location:index.html");
+                }
+                else {
+                    echo "<script>window.alert('Error in inserting data');</script>";
+                    header("Location:index.html");
+
+                }
+
+                $connection->close();
+            }
+        ?>
     </body>
 </html>
 <!--End the complaint page here-->
