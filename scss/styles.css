@@ -72,6 +72,10 @@ p {
   object-fit: cover;
 }
 
+.nav-link:hover {
+  background-color: coral;
+}
+
 .container-fluid {
   background-color: #525052;
   color: #fff;
