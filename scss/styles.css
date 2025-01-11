@@ -1,0 +1,153 @@
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #098740;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(231, 62, 62);
+}
+
+h1 {
+  font-weight: bolder;
+  padding-left: 20px;
+}
+
+p {
+  padding-left: 25px;
+}
+
+.footer {
+  min-height: 50vh;
+  background-image: url(../image_video/footer_image.jpg);
+  background-size: cover;
+  padding: 0;
+  color: #fff;
+}
+
+.footer_link div a {
+  display: grid;
+  text-decoration: none;
+  padding: 5px 20px;
+  color: #fff;
+}
+
+.footer_link div a:hover {
+  color: yellow;
+}
+
+.footer_color {
+  background-color: black;
+  min-height: 50vh;
+  opacity: 0.7;
+}
+
+.footer_description p {
+  color: yellow;
+  padding: 10px;
+}
+
+.footer_description h3, h4 {
+  padding: 15px;
+}
+
+.col-md-6 {
+  position: relative;
+  min-height: 400px;
+}
+.col-md-6 img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container-fluid {
+  background-color: #525052;
+  color: #fff;
+}
+
+.main_logo {
+  padding-left: 50px;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+.main_logo span {
+  color: coral;
+}
+
+.col-md-8 .nav_link ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.col-md-8 .nav_link ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-inline: 15px;
+}
+.col-md-8 .nav_link ul li a {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 10px;
+  color: #ffffff;
+  font-size: 24px;
+  margin-block: 6px;
+}
+.col-md-8 .nav_link ul li a:hover {
+  color: coral;
+  border-bottom: 2px solid coral;
+}
+
+.topics {
+  text-align: center;
+}
+
+.col-md-8 .nav_link ul li .col-md-8 .nav_link ul li a:hover {
+  color: coral;
+  border-bottom: 2px solid coral;
+}
+
+.col-md-8 .nav_link ul li:hover a {
+  color: coral;
+  position: relative;
+  width: 100%;
+}
+
+.box {
+  transform: translateY(200px);
+  opacity: 0;
+  transition: transform 1s ease, opacity 1.3s ease;
+}
+
+.box.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.col-md-8 .nav_link button {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .col-md-8 .nav_link ul {
+    display: none;
+  }
+  .col-md-8 .nav_link button {
+    display: block;
+  }
+}/*# sourceMappingURL=styles.css.map */
