@@ -13,17 +13,7 @@
         <style>
             
         </style>
-        <script type="text/javascript">
-            function fixedButton() {
-                let value = window.scrollY;
-                if(value > 1000){
-                    document.getElementById('fixed_btn').style.display = "block";
-                }
-                else {
-                    document.getElementById('fixed_btn').style.display = "none";
-                }
-            }
-        </script>
+        
     </head>
     <body onscroll="fixedButton()">
         <a class="btn btn-danger fixed_btn px-4" href="#header" id="fixed_btn">Top</a>

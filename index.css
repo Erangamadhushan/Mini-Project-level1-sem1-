@@ -535,37 +535,6 @@ header .search-bar-container .fa-search {
     transition:transform .8s;
 }
 
-.scrollNavBar {
-    position:fixed;
-    left:0;
-    top:0;
-    width:100%;
-    height:12%;
-    z-index:1002;
-    background:#000000eb;
-    display:flex;
-    justify-content:space-around;
-    backdrop-filter:blur(5px);
-    align-items:baseline;
-    transform:translateY(-100%);
-    transition:transform .4s;
-}
-.scrollNavBar.activation {
-    transform:translateY(0);
-    transition:transform .4s;
-}
-.scrollTopic {
-    display:flex;
-    justify-content:flex-start;
-}
-.scroll_nav_link>ul>li>a {
-    font-size:1.4em;
-}
-
-.scroll_nav_link>ul>li>a:hover {
-    border-bottom:1px solid coral;
-}
-
 .footer {
     min-height:50vh;
     background-image:url(image_video/footer_image.jpg);

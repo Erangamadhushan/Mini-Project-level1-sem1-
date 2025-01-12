@@ -7,12 +7,3 @@ closeBtn.onclick = () => {
     document.querySelector('.subscribe').classList.remove('active');
 }
 
-window.addEventListener('scroll',() => {
-    let scrollPosition = window.scrollY;
-    if(scrollPosition > 150){
-        document.querySelector('.scrollNavBar').classList.add('activation');
-    }
-    else {
-        document.querySelector('.scrollNavBar').classList.remove('activation');
-    }
-})

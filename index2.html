@@ -9,17 +9,7 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"/>
         <link rel="stylesheet" type="text/css" href="index1.css"/>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-        <script type="text/javascript">
-            function fixedButton() {
-                let value = window.scrollY;
-                if(value > 1200){
-                    document.getElementById('fixed_btn').style.display = "block";
-                }
-                else {
-                    document.getElementById('fixed_btn').style.display = "none";
-                }
-            }
-        </script>
+        
     </head>
     <body onscroll="fixedButton()">
         <a class="btn btn-danger fixed_btn px-4" href="#header" id="fixed_btn">Top</a>
