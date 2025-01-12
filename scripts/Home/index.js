@@ -1,11 +1,13 @@
 import { textContent, img } from "./welcome.js";
 import { foreign, local } from "./whoyouare.js";
 
+
 window.addEventListener("DOMContentLoaded", () => {
     renderPageWelcomeSection(textContent, img);
     renderSubcribeSection();
     renderRelativeSectionContent(foreign, local);
     renderMainDescription();
+    renderFoodStyles();
 });
 
 function renderMainDescription() {
@@ -20,6 +22,32 @@ function renderMainDescription() {
             </div>
         </div>
     `;
+};
+
+function renderFoodStyles() {
+    const foodStylesContainer = document.querySelector('.foodStylesContainer');
+    foodStylesContainer.innerHTML = `
+        <div class="row py-4">
+            <h2 class="text-center text-success">Sri Lankan Food Styles</h2>
+            <p class="text-center text-success">Sri Lankan cuisine is characterized by its distinctive blend of herbs, spices, fish, vegetables, rice, and fruits. The culinary experience offers a complex interplay of flavors, featuring sweet caramelized onion relishes, bitter melon, spicy coconut, and carefully balanced curry heat.</p>
+        </div>
+        <div class="row py-1 d-flex justify-content-center gap-3">
+            <div class="col-md-3">
+                <img src="./assets/images/Home/foodStyle1.jpg" alt=""/>
+            </div>
+            <div class="col-md-3">
+                <img src="./assets/images/Home/foodStyle2.jpg" alt=""/>
+            </div>
+            <div class="col-md-3">
+                <img src="./assets/images/Home/foodStyle3.jpg" alt=""/>
+            </div>
+        </div>
+        <div class="row py-4 justify-content-center">
+            <div class"d-grid place-items-center">
+                <a href="./food_styles.html" class="btn btn-outline-success">Explorer More ..</a>
+            </div>
+        </div>
+    `
 }
 
 function renderPageWelcomeSection(textContent, img) {
@@ -82,7 +110,7 @@ function renderRelativeSectionContent(foreign, local) {
     const relativeContainer = document.querySelector('.p_relative');
     relativeContainer.innerHTML = `
         <div class="container py-2 topic">
-            <h1 class="text-success">Welcome to Our Tourism Portal!</h1>
+            <h1 class="text-success text-center">Welcome to Our Tourism Portal!</h1>
             <p class="text-center">We recognize that visitors have different needs and preferences, so we've customized our content for both local and international travelers.</p>
         </div>
         <div class="container-fluid py-2 ">

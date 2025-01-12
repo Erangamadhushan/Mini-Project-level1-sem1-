@@ -37,6 +37,16 @@ body {
   padding: 15px;
 }
 
+img {
+  max-width: 100%;
+}
+
+.fixed_btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
 .welcomeImg {
   /* max-width:30vw; */
   height: 280px;
@@ -51,6 +61,26 @@ body {
 
 .welcomeImg img:hover {
   scale: 1.1;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.5em;
+}
+.navbar .navbar-brand span {
+  color: coral;
+}
+.navbar .navbar-nav .nav-link {
+  font-size: 1.1em;
+  color: #222;
+  text-align: center;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: coral;
+}
+
+.foodStylesContainer img {
+  min-height: 250px;
+  background-size: cover;
 }
 
 .scrollNavBar {
@@ -76,12 +106,11 @@ body {
   justify-content: flex-start;
 }
 
-.scroll_nav_link > ul > li > a {
+.scroll_nav_link ul li a {
   font-size: 1.1em;
 }
-
-.scroll_nav_link > ul > li > a:hover {
-  border-bottom: 1px solid coral;
+.scroll_nav_link ul li a:hover {
+  border-bottom: 1px solid #222;
 }
 
 .sectionborder {
@@ -89,13 +118,11 @@ body {
   border: 0.5px solid #222;
   border-radius: 0.8em;
 }
-
-.sectionborder > div a {
+.sectionborder div a {
   transform: translateX(-50px);
   opacity: 0;
   transition: all 0.4s;
 }
-
 .sectionborder:hover {
   transform: translateY(-20px);
 }
@@ -112,9 +139,6 @@ body {
   display: grid;
   place-items: center;
 }
-img {
-  max-width:100%;
-}
 .mainDescription .img_row .mainName {
   font-size: 3.5em;
 }
@@ -126,4 +150,10 @@ img {
 }
 .mainDescription .img_row .text_row {
   background-color: rgba(34, 34, 34, 0.6509803922);
+}
+
+@media screen and (max-width: 767px) {
+  .scrollNavBar {
+    display: none;
+  }
 }/*# sourceMappingURL=index.css.map */

@@ -1,6 +1,13 @@
 @import '../base';
 
-
+img {
+    max-width:100%;
+}
+.fixed_btn {
+    position:fixed;
+    right:20px;
+    bottom:20px;
+}
 
 .welcomeImg {
     /* max-width:30vw; */
@@ -16,6 +23,33 @@
 .welcomeImg img:hover{
     scale:1.1;
 }
+//navbar styles start here 
+.navbar {
+    .navbar-brand {
+        font-size:1.5em;
+        span {
+            color:coral;
+        }
+    }
+    .navbar-nav {
+        .nav-link {
+            font-size:1.1em;
+            color:#222;
+            text-align:center;
+            &:hover {
+                color:coral;
+            }
+        }
+    }
+}
+
+.foodStylesContainer {
+    img {
+        min-height:250px;
+        background-size:cover;
+    }
+}
+//navbar styles end here
 .scrollNavBar {
     position:fixed;
     left:0;
@@ -36,30 +70,43 @@
     display:flex;
     justify-content:flex-start;
 }
-.scroll_nav_link>ul>li>a {
-    font-size:1.1em;
+.scroll_nav_link {
+    ul {
+        li {
+            a {
+                font-size:1.1em;
+                &:hover {
+                    border-bottom:1px solid #222;
+                }
+            }
+        }
+    }
+    
 }
 
-.scroll_nav_link>ul>li>a:hover {
-    border-bottom:1px solid coral;
-}
+
 .sectionborder {
     transition:all .3s;
     border:.5px solid #222;
     border-radius:.8em;
-}
-.sectionborder>div a {
-    transform:translateX(-50px);
-    opacity:0;
-    transition: all .4s;
-}
-.sectionborder:hover {
-    transform:translateY(-20px);
-    a {
-        transform:translateX(20px);
-        opacity: 1;
+
+    div {
+        a {
+            transform:translateX(-50px);
+            opacity:0;
+            transition: all .4s;
+        }
+    }
+    &:hover {
+        transform:translateY(-20px);
+
+        a {
+            transform:translateX(20px);
+            opacity: 1;
+        }
     }
 }
+
 
 .mainDescription {
     background-image:url('../../assets/images/Home/mainimage.jpg');
@@ -82,5 +129,11 @@
         .text_row {
             background-color:#222222a6;
         }
+    }
+}
+
+@media screen and(max-width:767px) {
+    .scrollNavBar {
+        display:none;
     }
 }
