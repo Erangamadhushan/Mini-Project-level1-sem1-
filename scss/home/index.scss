@@ -43,3 +43,22 @@
 .scroll_nav_link>ul>li>a:hover {
     border-bottom:1px solid coral;
 }
+.sectionborder {
+    transition:all .3s;
+    border-bottom:1px solid #333;
+    border-right:1px solid #333;
+    border-radius:.8em;
+}
+.sectionborder>div a {
+    transform:translateX(-50px);
+    opacity:0;
+    transition: all .4s;
+}
+.sectionborder:hover {
+    transform:translateY(-20px);
+    box-shadow:1px 2px 5px gray;
+    a {
+        transform:translateX(20px);
+        opacity: 1;
+    }
+}
