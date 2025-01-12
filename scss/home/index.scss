@@ -45,8 +45,7 @@
 }
 .sectionborder {
     transition:all .3s;
-    border-bottom:1px solid #333;
-    border-right:1px solid #333;
+    border:.5px solid #222;
     border-radius:.8em;
 }
 .sectionborder>div a {
@@ -56,9 +55,32 @@
 }
 .sectionborder:hover {
     transform:translateY(-20px);
-    box-shadow:1px 2px 5px gray;
     a {
         transform:translateX(20px);
         opacity: 1;
+    }
+}
+
+.mainDescription {
+    background-image:url('../../assets/images/Home/mainimage.jpg');
+    min-height:100vh;
+    background-size:cover;
+    max-width:100%;
+    display:grid;
+    place-items:center;
+
+    .img_row {
+        .mainName {
+            font-size:3.5em;
+            span {
+                color:coral;
+            }
+        }
+        p {
+            font-size:1.2em;
+        }
+        .text_row {
+            background-color:#222222a6;
+        }
     }
 }

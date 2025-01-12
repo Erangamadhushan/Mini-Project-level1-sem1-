@@ -3,19 +3,6 @@ body {
   overflow-x: hidden;
 }
 
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #098740;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: rgb(231, 62, 62);
-}
-
 .footer {
   min-height: 50vh;
   background-image: url(../image_video/footer_image.jpg);
@@ -99,8 +86,7 @@ body {
 
 .sectionborder {
   transition: all 0.3s;
-  border-bottom: 1px solid #333;
-  border-right: 1px solid #333;
+  border: 0.5px solid #222;
   border-radius: 0.8em;
 }
 
@@ -112,9 +98,32 @@ body {
 
 .sectionborder:hover {
   transform: translateY(-20px);
-  box-shadow: 1px 2px 5px gray;
 }
 .sectionborder:hover a {
   transform: translateX(20px);
   opacity: 1;
+}
+
+.mainDescription {
+  background-image: url("../../assets/images/Home/mainimage.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  max-width: 100%;
+  display: grid;
+  place-items: center;
+}
+img {
+  max-width:100%;
+}
+.mainDescription .img_row .mainName {
+  font-size: 3.5em;
+}
+.mainDescription .img_row .mainName span {
+  color: coral;
+}
+.mainDescription .img_row p {
+  font-size: 1.2em;
+}
+.mainDescription .img_row .text_row {
+  background-color: rgba(34, 34, 34, 0.6509803922);
 }/*# sourceMappingURL=index.css.map */

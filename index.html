@@ -8,8 +8,8 @@
         <!--attach links-->
         
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="index.css" type="text/css"/>
         <link rel="icon" type="text/x-icon" href="image_video/main_logo1.png"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="scss/navbar.css"/>
         <link rel="stylesheet" type="text/css" href="scss/home/index.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
@@ -26,27 +26,20 @@
             <header></header> <!-- This content load by navbar.js file -->
             
             <!--Start page_content 01-->
-            <div class="container-fluid">
-                <div class="img_row">
-                    <div class="text_row box1" onload="myFunction1()">
-                        <h1 style="font-weight:900;"><span>S</span>tart <span>t</span>o <span>F</span>inish</h1>
-                        <p class="h5 ">Sri Lanka, historically known as Ceylon and officially the Democratic Socialist Republic of Sri Lanka, is an island country in South Asia. It lies in the Indian Ocean, southwest of the Bay of Bengal, separated from the Indian peninsula by the Gulf of Mannar and the Palk Strait.</p>
-                    </div>
-                </div>
-            </div>
+            <div class="container-fluid mainDescription"></div>
 
             <div style="display:table;clear:both;"></div>
-            <div class="container box welcometextContainer"> </div>
+            <div class="container welcometextContainer"> </div>
 
             <!--End page_content 01-->
-            <div class="container-fluid p_relative py-5 "> </div>
+            <div class="container-fluid p_relative p-4 py-5 "> </div>
             <hr/>
             
             <!--Start the page_content 04-->
-            <div class="container container1 box">
-                <div class="row row1 text-success ">
-                    <h1 class="text-white">Sri Lankan Food Styles</h1>
-                    <p style="font-size:24px;">
+            <div class="container"  >
+                <div class="row text-success py-4">
+                    <h1 class="text-center">Sri Lankan Food Styles</h1>
+                    <p class="text-md text-center">
                         Sri Lankan cuisine is known for its particular combinations of herbs, spices, fish, vegetables, rices, and fruits. The cuisine is highly centered around many varieties of rice, as well as coconut which is a ubiquitous plant throughout the country.
                     </p>
                 </div>
@@ -81,7 +74,7 @@
             </div>
             <!--End the page_content 06-->
             <!--Start the page_content 05-->
-            <div class="container-fluid bg-dark py-3 box">
+            <div class="container-fluid py-3">
                 <div class="row">
                     <div class="col-md-6 div_class1 main_row_margin">
                         <div>
@@ -197,13 +190,15 @@
             <!--Start footer side-->
             <footer> </footer><!--End the footer side-->
         </section>
-
-        <script src="app1.js"></script>
+        
         <script src="subscribe.js"></script>
         <script defer src="./scripts/app.js"></script>
-
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
         <script type="text/javascript" src="scripts/navbar.js"></script>
-        <script type="text/javascript" src="scripts/scrollnaction.js"></script>
+        <script type="text/javascript" src="scripts/scrollaction.js"></script>
         <script type="module" src="scripts/Home/index.js"></script>
         <script type="text/javascript" src="scripts/footer.js"></script> 
         

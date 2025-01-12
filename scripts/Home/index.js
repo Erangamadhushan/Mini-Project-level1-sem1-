@@ -5,7 +5,22 @@ window.addEventListener("DOMContentLoaded", () => {
     renderPageWelcomeSection(textContent, img);
     renderSubcribeSection();
     renderRelativeSectionContent(foreign, local);
+    renderMainDescription();
 });
+
+function renderMainDescription() {
+    const mainDesc = document.querySelector('.mainDescription');
+    mainDesc.innerHTML = `
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-7 grid place-items-center img_row" >
+                <div class="text_row box1 p-5" onload="myFunction1()" >
+                    <h1 class="text-white mainName"><span>S</span>tart <span>t</span>o <span>F</span>inish</h1>
+                    <p class="text-white">Sri Lanka, historically known as Ceylon and officially the Democratic Socialist Republic of Sri Lanka, is an island country in South Asia. It lies in the Indian Ocean, southwest of the Bay of Bengal, separated from the Indian peninsula by the Gulf of Mannar and the Palk Strait.</p>
+                </div>
+            </div>
+        </div>
+    `;
+}
 
 function renderPageWelcomeSection(textContent, img) {
     const welcometextContainer = document.querySelector('.welcometextContainer');
@@ -74,10 +89,10 @@ function renderRelativeSectionContent(foreign, local) {
     `;
     relativeContainer.innerHTML += `
             <div class="row py-5 justify-content-center gap-3 py-2">
-                <div class="col-md-5 p-5 sectionborder">
-                    <h3>${foreign[0].topic}</h3>
+                <div class="col-md-5 p-3 sectionborder">
+                    <h2 class="text-center py-3">${foreign[0].topic}</h2>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <img src="${foreign[0].img}" alt="${foreign.topic}"/>
                             <a href="#" class="btn btn-lg mt-5 btn-outline-success">${foreign[0].buttonText}</a>
                         </div>
@@ -90,10 +105,10 @@ function renderRelativeSectionContent(foreign, local) {
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 p-5 sectionborder">
-                    <h3>${local[0].topic}</h3>
+                <div class="col-md-5 p-3 sectionborder">
+                    <h2 class="text-center py-3">${local[0].topic}</h2>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <img src="${local[0].img}" alt="${local[0].topic}"/>
                             <a href="#" class="btn btn-lg mt-5 btn-outline-success ">${local[0].buttonText}</a>
                         </div>
@@ -110,7 +125,7 @@ function renderRelativeSectionContent(foreign, local) {
         </div>
     `;
     
-    console.log(relativeContainer);
+    //console.log(relativeContainer);
 
     
 }
