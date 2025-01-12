@@ -1,0 +1,15 @@
+@import '../_base.scss';
+
+.welcomeImg {
+    /* max-width:30vw; */
+    height:280px;
+    background-size:cover;
+    overflow:hidden;
+}
+.welcomeImg img {
+    overflow:hidden;
+    transition:all .2s;
+}
+.welcomeImg:hover img {
+    scale:1.1;
+}

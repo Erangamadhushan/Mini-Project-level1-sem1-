@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="index.css" type="text/css"/>
         <link rel="icon" type="text/x-icon" href="image_video/main_logo1.png"/>
         <link rel="stylesheet" type="text/css" href="scss/navbar.css"/>
+        <link rel="stylesheet" type="text/css" href="scss/home/index.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
         <!--attach script files-->
@@ -31,7 +32,7 @@
     </head><!--End the head element-->
     <body onscroll="fixedButton()" ><!--Start the body element-->
         <a class="btn btn-danger fixed_btn px-4" href="#header" id="fixed_btn">Top</a>
-        <section class="bg-dark">
+        <section>
             <div class="container-fluid py-3 bg-light"><marquee>Powered by Start To Finish Web Server</marquee></div>
             <header></header> <!-- This content load by navbar.js file -->
             
@@ -46,34 +47,10 @@
             </div>
 
             <div style="display:table;clear:both;"></div>
-            <!--Start page_content 02-->
-            <div class="container container1 text-success box">
-                <div class="row">
-                    <div>
-                        <h2 class="text-white text-sm">Welcome to Start to Finish</h2>
-                        <p>See what's waiting for you on your next island getaway.
-                            Savour the unique experiences this island treasure has to offer.</p>
-                    </div>
-                    <div class="container-fluid page_content2">
-                        <div class="row ">
-                            <div  class="col-md-4">
-                                <img  src="image_video/sigiriya.jpg" alt=""/>
-                            </div>
-                            <div class="col-md-4">
-                                <img class="img_responsive" src="image_video/anuradhapura.jpg" alt=""/>
-                            </div>
-                            <div class="col-md-4">
-                                <img class="img_responsive" src="image_video/colombo_cidy.jpg" alt=""/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--End the page_content 02-->
-            <hr/>
+            <div class="container box welcometextContainer"> </div>
             <!--End page_content 01-->
             <div class="container-fluid p_relative py-2 " >
-                <div class="container py-2 topic ">
+                <!-- <div class="container py-2 topic ">
                     <h1 class=" text-light">Are You ?</h1>
                 </div>
                 <div class="container py-3 ">
@@ -103,11 +80,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <hr/>
             <div class="scrollNavBar">
-                <div class="main_logo text-white scrollTopic">
+                <!-- <div class="main_logo text-white scrollTopic">
                     <h3><span>S</span>tart <span>t</span>o <span>F</span>inish</h3>
                     
                 </div>
@@ -117,7 +94,7 @@
                         <li><a href="about.html" class="btn text-white">About</a></li>
                         <li><a href="contact_us.html" class="btn text-white">Contact Us</a></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
 
             <!--Start the page_content 04-->
@@ -270,27 +247,9 @@
                 </div>
             </div>
 
-            <div class="subscribe">
-                <button type="button" id="closeBtn">&times;</button>
-                <div>
-                    <form action="subscribe.php" method="post">
-                        <div class="mt-3">
-                            <label for="userName" class="form-label text-white">User Name:</label>
-                            <input type="text" id="userName" name="userName" class="form-control"/>
-                        </div>
-                        <div class="mt-3">
-                            <label for="email" class="form-label text-white">Email :</label>
-                            <input type="email" id="email" name="email" class="form-control"/>
-                        </div>
-                        <div class="d-grid mt-4">
-                            <button type="submit" class="btn btn-warning">Subscribe</button>
-                        </div>
-                    </form>
-                </div>      
-            </div>
-            <!--Start footer side-->
-            
+            <div class="subscribeSection"></div>
 
+            <!--Start footer side-->
             <footer> </footer><!--End the footer side-->
         </section>
 
@@ -298,6 +257,9 @@
         <script src="subscribe.js"></script>
         <script defer src="./scripts/app.js"></script>
         <script type="text/javascript" src="scripts/navbar.js"></script>
+        <script type="text/javascript" src="scripts/scrollnaction.js"></script>
+        <script type="module" src="scripts/Home/index.js"></script>
         <script type="text/javascript" src="scripts/footer.js"></script> 
+        
     </body><!--End the body element-->
 </html><!--End the html page-->

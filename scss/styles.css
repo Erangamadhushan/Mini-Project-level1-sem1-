@@ -16,15 +16,6 @@ body {
   background-color: rgb(231, 62, 62);
 }
 
-h1 {
-  font-weight: bolder;
-  padding-left: 20px;
-}
-
-p {
-  padding-left: 25px;
-}
-
 .footer {
   min-height: 50vh;
   background-image: url(../image_video/footer_image.jpg);
