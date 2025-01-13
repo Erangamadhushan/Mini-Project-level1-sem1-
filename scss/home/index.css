@@ -45,6 +45,32 @@ img {
   position: fixed;
   right: 20px;
   bottom: 20px;
+  display: none;
+  z-index: 101;
+}
+
+.card {
+  overflow: hidden;
+  transition: all 0.4s;
+}
+.card img {
+  transition: all 0.4s;
+}
+.card a {
+  scale: 0;
+}
+.card .card-body {
+  transition: all 0.2s;
+  transition-delay: 0.1s;
+}
+.card:hover img {
+  transform: translateY(-20px) scale(0.7);
+}
+.card:hover .card-body {
+  transform: translateY(-45px);
+}
+.card:hover a {
+  scale: 1;
 }
 
 .welcomeImg {
@@ -152,7 +178,7 @@ img {
   background-color: rgba(34, 34, 34, 0.6509803922);
 }
 
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .scrollNavBar {
     display: none;
   }

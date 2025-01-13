@@ -7,7 +7,36 @@ img {
     position:fixed;
     right:20px;
     bottom:20px;
+    display:none;
+    z-index:101;
 }
+.card {
+    overflow:hidden;
+    transition:all .4s;
+    img {
+        transition:all .4s;
+    }
+    a {
+        scale:0;
+    }
+    .card-body {
+        transition:all .2s;
+        transition-delay:.1s;
+    }
+    &:hover{
+     img {
+        transform:translateY(-20px)scale(.7);
+        }
+        .card-body {
+            transform:translateY(-45px);
+        }
+
+        a {
+            scale:1;
+        }
+    }
+}
+
 
 .welcomeImg {
     /* max-width:30vw; */
@@ -132,7 +161,7 @@ img {
     }
 }
 
-@media only screen and(max-width:767px) {
+@media only screen and (max-width:767px) {
     .scrollNavBar {
         display:none;
     }
