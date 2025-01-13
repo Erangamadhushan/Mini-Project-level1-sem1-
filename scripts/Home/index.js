@@ -4,7 +4,7 @@ import { foreign, local } from "./whoyouare.js";
 
 window.addEventListener("DOMContentLoaded", () => {
     renderPageWelcomeSection(textContent, img);
-    renderSubcribeSection();
+    //renderSubcribeSection();
     renderRelativeSectionContent(foreign, local);
     renderMainDescription();
     renderFoodStyles();
@@ -81,29 +81,29 @@ function renderPageWelcomeSection(textContent, img) {
 
 //render subscribtion section
 
-function renderSubcribeSection() {
-    const subscribeContainer = document.querySelector('.subscribeSection');
-    subscribeContainer.innerHTML = `
-        <div class="subscribe">
-            <button type="button" id="closeBtn">&times;</button>
-            <div>
-                <form action="subscribe.php" method="post">
-                    <div class="mt-3">
-                        <label for="userName" class="form-label text-white">User Name:</label>
-                        <input type="text" id="userName" name="userName" class="form-control"/>
-                    </div>
-                    <div class="mt-3">
-                        <label for="email" class="form-label text-white">Email :</label>
-                        <input type="email" id="email" name="email" class="form-control"/>
-                    </div>
-                    <div class="d-grid mt-4">
-                        <button type="submit" class="btn btn-warning">Subscribe</button>
-                    </div>
-                </form>
-            </div>      
-        </div>
-    `
-}
+// function renderSubcribeSection() {
+//     const subscribeContainer = document.querySelector('.subscribeSection');
+//     subscribeContainer.innerHTML = `
+//         <div class="subscribe">
+//             <button type="button" id="closeBtn">&times;</button>
+//             <div>
+//                 <form action="subscribe.php" method="post">
+//                     <div class="mt-3">
+//                         <label for="userName" class="form-label text-white">User Name:</label>
+//                         <input type="text" id="userName" name="userName" class="form-control"/>
+//                     </div>
+//                     <div class="mt-3">
+//                         <label for="email" class="form-label text-white">Email :</label>
+//                         <input type="email" id="email" name="email" class="form-control"/>
+//                     </div>
+//                     <div class="d-grid mt-4">
+//                         <button type="submit" class="btn btn-warning">Subscribe</button>
+//                     </div>
+//                 </form>
+//             </div>      
+//         </div>
+//     `
+// }
 
 function renderRelativeSectionContent(foreign, local) {
     console.log(foreign[0].desc[0]);
