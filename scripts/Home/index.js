@@ -112,7 +112,7 @@ function renderRelativeSectionContent(foreign, local) {
     `;
     relativeContainer.innerHTML += `
             <div class="row py-5 justify-content-center gap-3 py-2">
-                <div class="col-md-5 p-3 sectionborder">
+                <div class="col-lg-5 p-3 sectionborder">
                     <h2 class="text-center py-3">${foreign[0].topic}</h2>
                     <div class="row">
                         <div class="col-md-4">
@@ -128,7 +128,7 @@ function renderRelativeSectionContent(foreign, local) {
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 p-3 sectionborder">
+                <div class="col-lg-5 p-3 sectionborder">
                     <h2 class="text-center py-3">${local[0].topic}</h2>
                     <div class="row">
                         <div class="col-md-4">
@@ -153,7 +153,7 @@ function renderRelativeSectionContent(foreign, local) {
 
 function renderTouristResourts() {
     const explorerTouristRosourtsContainer = document.querySelector('.explorerTouristResourts');
-    explorerTouristRosourtsContainer.innerHTML = " ";
+    
 
 }
 function renderBeachSideContent(beachSideContent) {
@@ -169,7 +169,7 @@ function renderBeachSideContent(beachSideContent) {
     `;
     beachSideContent.forEach((ele) => {
         explorerBeachSideContent += `
-            <div class="col-md-4 py-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <div class="col-lg-4 col-md-5 py-2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                 <div class="card">
                     <img src="${ele.img}" alt="${ele.title}" class="card-img-top"/>
                     <div class="card-body p-3">

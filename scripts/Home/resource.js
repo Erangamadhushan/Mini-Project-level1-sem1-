@@ -17,5 +17,12 @@ export const beachSideContent = [
 ];
 
 export const touristResourts = [
-
+    "/assets/images/Home/group_img01.jpg",
+    "/assets/images/Home/group_img02.jpg",
+    "/assets/images/Home/group_img03.jpg",
+    "/assets/images/Home/group_img04.jpg",
+    "/assets/images/Home/group_img05.jpg",
+    "/assets/images/Home/group_img06.jpg",
+    "/assets/images/Home/group_img07.jpg",
+    "/assets/images/Home/group_img08.jpg",
 ];
