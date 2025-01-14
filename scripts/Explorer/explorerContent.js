@@ -1,4 +1,4 @@
-export const explorer = {
+export  const explorer = {
     wildlife: [
         {
             title:"Incredible Wildlife",
@@ -36,7 +36,7 @@ export const explorer = {
             title:"Tropical Climate",
             img1:"image_video/climate01.jpg",
             img2:"image_video/climate02.jpg",
-            desc:"No matter what time of year you choose to visit Sri Lanka, you'll be treated to wonderful weather. In fact,<mark> this is one of the warmest countries in the world</mark>. The northern and eastern regions tend to be drier and hotter, while the central highlands see the most rainfall. The best time to visit Sri Lanka depends on your interests. For beach holidays, plan your trip from November to March; for wildlife spotting, the best season is May to October."
+            desc:"No matter what time of year you choose to visit Sri Lanka, you'll be treated to wonderful weather. In fact, this is one of the warmest countries in the world. The northern and eastern regions tend to be drier and hotter, while the central highlands see the most rainfall. The best time to visit Sri Lanka depends on your interests. For beach holidays, plan your trip from November to March; for wildlife spotting, the best season is May to October."
         }
     ],
     trainJourney: [
@@ -72,5 +72,3 @@ export const explorer = {
         }
     ]
 }
-
-//<h1>Reasons Why Foreigners Visit Sri Lanka</h1>

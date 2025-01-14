@@ -35,4 +35,16 @@ body {
 
 .footer_description h3, h4 {
   padding: 15px;
+}
+
+.carousel {
+  overflow: hidden;
+}
+.carousel .carousel-inner {
+  overflow: hidden;
+}
+.carousel .carousel-inner .carousel-item img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */
