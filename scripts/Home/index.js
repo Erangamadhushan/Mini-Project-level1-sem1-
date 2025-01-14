@@ -11,6 +11,7 @@ window.addEventListener("DOMContentLoaded", () => {
     renderFoodStyles();
     renderTouristResourts(touristResourts);
     renderBeachSideContent(beachSideContent);
+    renderNewsLatterContent();
 });
 
 function renderMainDescription() {
@@ -88,13 +89,21 @@ function renderExplorerDate() {
     const explorerIslandContainer = document.querySelector('.explorerIsland');
     explorerIslandContainer.innerHTML = `
         <div class="row py-5" data-aos="fade-up" data-aos-duration="1000">
-            <div class="col-md-7 ">
+            <div class="col-md-7 d-flex flex-column justify-content-center">
                 <h2 class="text-xxl py-2">Explore Island Stories</h2>
                 <p class="text-lg py-2">Each place, and each smile in Sri Lanka has a story to tell. We have so much to share with you, so come along to our island in paradise!</p>
                 <p>Sri Lanka offers a diverse range of experiences for explorers, combining natural beauty, cultural heritage, and adventure opportunities:</p>
             </div>
             <div class="col-md-5 d-flex justify-content-center align-items-center">
                 <a href="https://the-shooting-star.com/offbeat-sri-lanka/" target="_blank" type="button" class="btn btn-outline-primary btn-lg">EXPLORE MORE..</a>
+            </div>
+        </div>
+        <div class="row py-5 d-flex justify-content-center explorerIslandContainer">
+            <div class="col-md-9">
+                <h5 class="text-3">Sri Lanka, often referred to as the "Pearl of the Indian Ocean," is a captivating island nation renowned for its rich cultural heritage, diverse landscapes, and warm hospitality. From sun-kissed beaches to ancient temples and lush tea plantations, the country offers a plethora of experiences for travelers.</h5>
+            </div>
+            <div class="col-md-2 explorerIslandDetails">
+                <a href="#" class="btn btn-lg btn-outline-primary">Find Out...</a>
             </div>
         </div>
    `;
@@ -151,9 +160,70 @@ function renderRelativeSectionContent(foreign, local) {
     
 }
 
-function renderTouristResourts() {
+function renderTouristResourts(touristResourts) {
     const explorerTouristRosourtsContainer = document.querySelector('.explorerTouristResourts');
-    
+    let explorerTouristResourtsContent = `
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-5">
+                <div class="py-2 imgItem">
+                    <img src="${touristResourts[0]}" alt=""/>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p>Sri Lanka Tourism Development Authority (SLTDA) is the government authority tasked with planning, development, regulation, and policy implementation of tourism and related industries.</p>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-sketch row-cols-2 py-3">
+                    <div class="imgItem">
+                        <img src="${touristResourts[1]}" alt=""/>
+                        <div class="d-flex justify-content-center align-items-center subItem">
+                            <p>Sri Lanka Tourism Development Authority (SLTDA) is the government authority tasked with planning, development, regulation, and policy implementation of tourism and related industries.</p>
+                        </div>
+                    </div>
+                    <div class="imgItem">
+                        <img src="${touristResourts[2]}" alt=""/>
+                        <div class="d-flex justify-content-center align-items-center subItem">
+                            <p>Sri Lanka Tourism Development Authority (SLTDA) is the government authority tasked with planning, development, regulation, and policy implementation of tourism and related industries.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-3 imgItem">
+                    <img src="${touristResourts[3]}" alt=""/>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p>Sri Lanka Tourism Development Authority (SLTDA) is the government authority tasked with planning, development, regulation, and policy implementation of tourism and related industries.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-5">
+                <div class="row row-cols-2 py-3 ">
+                    <div class="imgItem ">
+                        <img src="${touristResourts[4]}" alt=""/>
+                        <div class="d-flex justify-content-center align-items-center subItem">
+                            <p>Sri Lanka Tourism Development Authority (SLTDA) is the government authority tasked with planning, development, regulation, and policy implementation of tourism and related industries.</p>
+                        </div>
+                    </div>
+                    <div class="imgItem">
+                        <img src="${touristResourts[5]}" alt=""/>
+                        <div class="d-flex justify-content-center align-items-center subItem">
+                            <p>Sri Lanka Tourism Development Authority (SLTDA) is the government authority tasked with planning, development, regulation, and policy implementation of tourism and related industries.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-3 imgItem">
+                    <img src="${touristResourts[6]}" alt=""/>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p>Sri Lanka Tourism Development Authority (SLTDA) is the government authority tasked with planning, development, regulation, and policy implementation of tourism and related industries.</p>
+                    </div>
+                </div>
+                <div class="py-3 imgItem">
+                    <img src="${touristResourts[7]}" alt=""/>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <p>Sri Lanka Tourism Development Authority (SLTDA) is the government authority tasked with planning, development, regulation, and policy implementation of tourism and related industries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+    explorerTouristRosourtsContainer.innerHTML = explorerTouristResourtsContent;
 
 }
 function renderBeachSideContent(beachSideContent) {
@@ -185,6 +255,10 @@ function renderBeachSideContent(beachSideContent) {
     explorerBeachSideContent += `</div></div> `;
     explorerBeachSideContainer.innerHTML = explorerBeachSideContent;
 
+}
+
+function renderNewsLatterContent() {
+    
 }
 
 /*
