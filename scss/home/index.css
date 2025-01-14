@@ -141,7 +141,7 @@ img {
 
 .sectionborder {
   transition: all 0.3s;
-  border: 0.5px solid #222;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), 0px 6px 20px rgba(0, 0, 0, 0.19);
   border-radius: 0.8em;
 }
 .sectionborder div a {

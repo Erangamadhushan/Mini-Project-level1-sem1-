@@ -1,0 +1,191 @@
+<!-- 
+        <div class="container-fluid py-3 bg-light"><marquee>Powered by Start To Finish Web Server</marquee></div>
+        <header></header>
+
+        <div class="container-fluid bg-dark text-white">
+            <div class="container my-1 py-4 ">
+                <div class="row" >
+                    <div class="col-md-6">
+                        <div >
+                            <h2 class="text-center display-5">MAP</h2>
+                            <a href="https://www.google.com/maps/place/Hikkaduwa+Beach/@6.134702,80.0905363,1352m/data=!3m1!1">
+                            <img id="map" src="image_video/Map.png" alt="" style="width:70%;height:auto;margin-inline:15%; border-radius:20px;" class="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 py-5">
+                        <h2 style="font-size:50px;" class="py-4">About Hikkaduwa</h2>
+                        <p class="my-2 py-4 text-light h3">Hikkaduwa Beach Sri Lanka is the name of a small town which is located on the south coast of Sri Lanka around 98 KM on the south of Colombo. It is well known for the Hikkaduwa beach which is labeled as one of the best surfing site in Sri Lanka and for Coral Sanctuary which is located a few meters away from the shore.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container my-3 py-3">
+            <div class="row ">
+                <div class="col-md-4 pb-4">
+                    <div class="box ">
+                        <div class="div1">
+                            <h2>Weather</h2>
+                            <p>Hikkaduwa Beach in Sri Lanka is a 
+                            hub of adventure and relaxation. 
+                            It's known for its exciting water
+                            sports and diverse food offerings. 
+                            The beach also houses numerous spa centers for relaxation,
+                            comfortable accommodations with various amenities, 
+                            and a range of tours for cultural and wildlife exploration.</p>
+                        </div>
+                        <div class="div2">
+                            <img src="image_video/1.jpeg" alt="for facilities">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-4 pb-4">
+                    <div class="box ">
+                        <div class="div1">
+                            <h2>Facilities</h2>
+                            <p>Despite tourism boosting the local economy 
+                            and providing employment, it has led to environmental 
+                            issues and increased crime rates. While locals are known 
+                            for their warmth, instances of tourist harassment have been 
+                            reported. It's recommended to stay updated with reliable 
+                            sources before planning a visit.</p>
+                        </div>
+                        <div class="div2">
+                            <img src="image_video/2.jpeg" alt="for facilities">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 pb-4">
+                    <div class="box">
+                        <div class="div1">
+                            <h2>Current Situation</h2>
+                            <p>Hikkaduwa Beach in Sri Lanka is a haven for travelers, offering a mix of adventure and relaxation. Visitors 	can indulge in water sports like snorkeling, scuba diving, and surfing, or swim with sea turtles. Whale 	watching tours and glass-bottom boat rides offer unique experiences. For relaxation, beach yoga sessions 	are available, and the local cuisine, especially fresh seafood, is a must-try. The beach also boasts a 	vibrant nightlife and offers various tours for sightseeing and exploration.</p>
+                        </div>
+                        <div class="div2">
+                            <img src="image_video/3.jpeg" alt="for facilities">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-3 py-3">
+            <div class="row ">
+                <div class="col-md-4 pb-4">
+                    <div class="box">
+                        <div class="div1">
+                            <h2>Don't do</h2>
+                            <p>In Hikkaduwa, Sri Lanka, travelers should avoid dark, deserted areas and secure their belongings. Be 	cautious of bag snatchers, especially when on the street. Keep money and passport in a body-belt for 	safety. Avoid crowded public places and large gatherings and . Lastly, use mosquito repellent to protect 	against dengue fever, especially during the monsoon season</p>
+                        </div>
+                        <div class="div2">
+                            <img src="image_video/4.jpeg" alt="for facilities">
+                        </div>
+                        
+                      </div>
+                </div>
+                <div class="col-md-4 pb-4">
+                    <div class="box">
+                        <div class="div1">
+                            <h2>Besttimes</h2>
+                            <p>The optimal time to visit Hikkaduwa, Sri Lanka, is during the months of January, February, and March, when 	the weather conditions are most favorable for visitors. If you prefer mildly warm weather, December through 	February is also a good time. On a daily basis, the best times to visit Hikkaduwa Beach are in the morning 	and late afternoon. Mornings offer less crowded conditions for activities like surfing and swimming, while 	late afternoons provide the opportunity to witness beautiful sunsets. </p>
+                        </div>
+                        <div class="div2">
+                            <img src="image_video/5.jpeg" alt="for facilities">
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-4 pb-4">
+                    <div class="box">
+                        <div class="div1">
+                            <h2>Transpotation</h2>
+                            <p>For transportation around Hikkaduwa Beach in Sri Lanka, you have several options. You can enjoy a 	picturesque train journey from Colombo or use local buses. For more personalized service, consider using 	the Uber or PickMe apps, which offer a range of vehicles including bikes, three-wheelers, cars, and vans. 	However, be cautious about using local vehicles as they may charge significantly more than the actual value 	of the ride.</p>
+                        </div>
+                        <div class="div2">
+                            <img src="image_video/6.jpeg" alt="for facilities">
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-dark text-white">
+            <div class="container my-2 py-1">
+                <h2 class="text-center display-4">Supports & Services</h2>
+            </div>
+            <div class="container my-3 py-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-3 pb-4">
+                        <div class="div_class1 pt-3">
+                            <h2>Police Stations</h2>
+                            <a href="https://www.google.com/maps/search/police+station/@6.1303051,80.0592666,8749m/data=!3m1!1e3!4m8!2m7!3m6!1spolice+station!2sHikkaduwa+Beach!3s0x3ae177e2cbcb6ead:0xd0adba737d2f45d9!4m2!1d80.0990596!2d6.1377266?entry=ttu" title="map">
+                            <img src="image_video/Police.jpeg" alt="police station in hikkaduwa">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pb-4">
+                        <div class="div_class1 pt-3">
+                            <h2>ATM</h2>
+                            <a href="https://www.google.com/maps/search/atm/@6.130303,80.0592666,10856m/data=!3m2!1e3!4b1!4m8">
+                            <img src="image_video/ATM.jpeg" alt="ATM distribution in hikkaduwa">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pb-4">
+                        <div class="div_class1 pt-3">
+                            <h2>Bank</h2>
+                            <a href="https://www.google.com/maps/search/banks/@6.1302999,80.0592665,10856m/data=!3m2!1e3!4b1!4m8!2m7!3m6!1sbanks!2sHikkaduwa+Beach!3s0x3ae177e2cbcb6ead:0xd0adba737d2f45d9!4m2!1d80.0990596!2d6.1377266?entry=ttu">
+                            <img src="image_video/Bank.jpeg" alt="Bank distribution in hikkaduwa">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pb-4">
+                        <div class="div_class1  ">
+                            <h2 class="pt-3">Hospitals</h2>
+                            <a href="https://www.google.com/maps/search/government+hospital/@6.1318875,80.0615658,8516m/data=!3m1!1e3!4m8!2m7!3m6!1sgovernment+hospital!2sHikkaduwa+Beach!3s0x3ae177e2cbcb6ead:0xd0adba737d2f45d9!4m2!1d80.0990596!2d6.1377266?entry=ttu">
+                            <img src="image_video/hospitals.jpeg" alt=" Hospitals in hikkaduwa">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-3 py-4">
+                        <div class="div_class1 pt-3">
+                            <h2>Pharmacy</h2>
+                            <a href="https://www.google.com/maps/search/pharmacy/@6.134386,80.0866463,3424m/data=!3m1!1e3!4m8">
+                            <img src="image_video/Pharmacy.jpeg" alt="Pharmacy distribution in hikkaduwa">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 py-4">
+                        <div class="div_class1 pt-3">
+                            <h2>Food Stores</h2>
+                            <a href="https://www.google.com/maps/search/food+stores/@6.1343857,80.0866463,5428m/data=!3m2!1e3!4">
+                            <img src="image_video/Food Stores.jpeg" alt="Food Stores in hikkaduwa"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 py-4">
+                        <div class="div_class1 d-flex flex-column align-items-center pt-3">
+                            <h2>Hotels</h2>
+                            <a href="https://www.google.com/maps/search/hotels/@6.1343849,80.0866462,5428m/data=!3m2!1e3!4b1!4m8!2m7!3m6!1shotels!2sHikkaduwa+Beach!3s0x3ae177e2cbcb6ead:0xd0adba737d2f45d9!4m2!1d80.0990596!2d6.1377266?entry=ttu">
+                            <img src="image_video/Hotels.jpeg" alt="Hotels distribution at hikkaduwa">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 py-4">
+                        <div class="div_class1">
+                            <h2 class="pt-3">Restaurants</h2>
+                            <a href="https://www.google.com/maps/search/restaurants/@6.1343842,80.0866462,5428m/data=!3m2!1e3!4b1!4m8!2m7!3m6!1srestaurants!2sHikkaduwa+Beach!3s0x3ae177e2cbcb6ead:0xd0adba737d2f45d9!4m2!1d80.0990596!2d6.1377266?entry=ttu">
+                            <img src="image_video/Restaurants.jpeg" alt=" Restaurants in hikkaduwa">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         -->
+
+        <!--<footer> </footer>End the footer side-->
