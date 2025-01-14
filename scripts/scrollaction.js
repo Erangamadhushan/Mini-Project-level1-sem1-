@@ -13,7 +13,7 @@ function renderScrollNavbar() {
             <ul class="list-unstyled d-flex text-white ">
                 <li><a href="index.html" class="btn text-white  ml-4">Home</a></li>
                 <li><a href="about.html" class="btn text-white">About</a></li>
-                <li><a href="contact_us.html" class="btn text-white">Contact Us</a></li>
+                <li><a href="contact.html" class="btn text-white">Contact Us</a></li>
             </ul>
         </div>
     `

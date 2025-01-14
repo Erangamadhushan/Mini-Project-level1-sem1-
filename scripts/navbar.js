@@ -16,7 +16,7 @@ function renderNavbar() {
                                 <ul class="navbar-nav d-flex gap-3 justify-content-center">
                                     <li><a href="./index.html" class="nav-link text-dark">Home</a></li>
                                     <li><a href="./about.html" class="nav-link text-dark">About</a></li>
-                                    <li><a href="./contact_us.html" class="nav-link text-dark">Contact</a></li>
+                                    <li><a href="./contact.html" class="nav-link text-dark">Contact</a></li>
                                 </uL
                             </div>
                         </div>
