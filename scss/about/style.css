@@ -1,0 +1,38 @@
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.footer {
+  min-height: 50vh;
+  background-image: url("../image_video/footer_image.jpg");
+  background-size: cover;
+  padding: 0;
+  color: #fff;
+}
+
+.footer_link div a {
+  display: grid;
+  text-decoration: none;
+  padding: 5px 20px;
+  color: #fff;
+}
+
+.footer_link div a:hover {
+  color: yellow;
+}
+
+.footer_color {
+  background-color: black;
+  min-height: 50vh;
+  opacity: 0.7;
+}
+
+.footer_description p {
+  color: yellow;
+  padding: 10px;
+}
+
+.footer_description h3, h4 {
+  padding: 15px;
+}/*# sourceMappingURL=style.css.map */

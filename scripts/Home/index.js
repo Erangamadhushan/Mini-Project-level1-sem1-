@@ -258,7 +258,22 @@ function renderBeachSideContent(beachSideContent) {
 }
 
 function renderNewsLatterContent() {
-    
+    const newsLatterContainer = document.querySelector('.newlatterContainer');
+    let newsLatterContent = `
+        <div class="row py-5">
+            <h3>Subscribe Our Newslater</h3>
+            <div class="d-flex"> 
+                <p>Sri Lanka's blend of natural beauty, cultural richness, and warm hospitality makes it a compelling destination for travelers seeking diverse experiences.</p>
+            </div>
+            <div class="d-flex">
+                <form action="" class="d-flex gap-2 w-100">
+                    <input type="email" name="newslatterportral" placeholder="example123@gmail.com" class="p-3 w-75" id="newslatterportral" required/>
+                    <input type="submit" class="btn btn-outline-danger p-3 px-5" value="Subscribe"/>
+                </form>
+            </div>
+        </div>
+    `;
+    newsLatterContainer.innerHTML = newsLatterContent;
 }
 
 /*
