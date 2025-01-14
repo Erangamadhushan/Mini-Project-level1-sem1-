@@ -16,17 +16,31 @@ function renderContactUsContent(developers) {
                 </p>
             </div>
         </div>
-        <div class="row py-5 d-flex justify-content-center gap-3">
+        <div class="row p-3 py-5 d-flex justify-content-center gap-3">
     `;
     developers.forEach((developer) => {
         rootContent += `
             <div class="col-md-3 d-flex flex-column devcard my-3 py-3">
-                <div class="w-100">
-                    <img src="${developer.img}" alt="${developer.desc}" class="w-75"/>
+                <div>
+                    <div class="w-100">
+                        <img src="${developer.img}" alt="${developer.desc}" class="w-75"/>
+                    </div>
+                    <div class="">
+                        <h4>${developer.name}</h4>
+                        <p>${developer.desc}</p>
+                    </div>
                 </div>
-                <div class="">
-                    <h4>${developer.name}</h4>
-                    <p>${developer.desc}</p>
+                <div class="bg-success d-flex flex-column justify-content-center p-2">
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-dark">Connect</button>
+                    </div>  
+                    <div>
+                        <a href=${developer.socialMedia.xaddress} ><img src="" alt="${developer.name}"/></a>
+                        <a href=${developer.socialMedia.linkinaddress} ><img src="" alt="${developer.name}"/></a>
+                        <a href=${developer.socialMedia.gmail} ><img src="" alt="${developer.name}"/></a>
+                        <a href=${developer.socialMedia.githubprofile} ><img src="" alt="${developer.name}"/></a>
+                        <a href=${developer.socialMedia.facefookUserName} ><img src="" alt="${developer.name}"/></a>
+                    </div>                  
                 </div>
             </div>
         `
