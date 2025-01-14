@@ -30,16 +30,16 @@ function renderContactUsContent(developers) {
                         <p>${developer.desc}</p>
                     </div>
                 </div>
-                <div class="bg-success d-flex flex-column justify-content-center p-2">
+                <div class="bg-success d-flex flex-column justify-content-center p-2 contact_method">
                     <div class="d-flex justify-content-center">
                         <button type="button" class="btn btn-dark">Connect</button>
                     </div>  
-                    <div>
-                        <a href=${developer.socialMedia.xaddress} ><img src="" alt="${developer.name}"/></a>
-                        <a href=${developer.socialMedia.linkinaddress} ><img src="" alt="${developer.name}"/></a>
-                        <a href=${developer.socialMedia.gmail} ><img src="" alt="${developer.name}"/></a>
-                        <a href=${developer.socialMedia.githubprofile} ><img src="" alt="${developer.name}"/></a>
-                        <a href=${developer.socialMedia.facefookUserName} ><img src="" alt="${developer.name}"/></a>
+                    <div class="d-flex w-100 justify-content-center py-2 gap-2 align-items-baseline">
+                        <a href=${developer.socialMedia.xaddress} ><img class="w-20" src="./assets/icons/twitter.png" alt="${developer.name}"/></a>
+                        <a href=${developer.socialMedia.linkinaddress} ><img class="w-20" src="./assets/icons/linkedin.png" alt="${developer.name}"/></a>
+                        <a href=${developer.socialMedia.gmail} ><img  src="./assets/icons/gmail.png" alt="${developer.name}"/></a>
+                        <a href=${developer.socialMedia.githubprofile} ><img class="w-20" src="./assets/icons/github.png" alt="${developer.name}"/></a>
+                        <a href=${developer.socialMedia.facefookUserName} ><img class="w-20" src="./assets/icons/facebook.png" alt="${developer.name}"/></a>
                     </div>                  
                 </div>
             </div>

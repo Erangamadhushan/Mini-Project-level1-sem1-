@@ -3,11 +3,26 @@
 .devcard {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition:all .3s;
+    overflow:hidden;
+    transform:scaleY(0.95);
     img {
         margin-inline:10%;
     }
+    .contact_method {
+        transform:translateY(120%);
+        opacity:.2;
+        transition:all .4s;
+    }
+
     &:hover {
         scale:1.05;
         transition:all .3s;
+        .contact_method {
+            transform:translateY(0);
+            opacity:1;
+            transition:all .4s;
+        }
     }
+    
+    
 }

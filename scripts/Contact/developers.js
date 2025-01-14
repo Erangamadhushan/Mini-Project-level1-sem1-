@@ -8,7 +8,7 @@ export const developers = [
             xaddress:"",
             linkinaddress:"",
             gmail:"",
-            githubprofile:"",
+            githubprofile:"https://github.com/RC-inventrix",
             facefookUserName:""
         }
     },
@@ -21,7 +21,7 @@ export const developers = [
             xaddress:"",
             linkinaddress:"",
             gmail:"",
-            githubprofile:"",
+            githubprofile:"https://github.com/Thareesha98",
             facefookUserName:""
         }
     },
@@ -34,7 +34,7 @@ export const developers = [
             xaddress:"",
             linkinaddress:"",
             gmail:"",
-            githubprofile:"",
+            githubprofile:"https://github.com/ThathAbhi",
             facefookUserName:""
         }
     },
@@ -47,7 +47,7 @@ export const developers = [
             xaddress:"",
             linkinaddress:"",
             gmail:"",
-            githubprofile:"",
+            githubprofile:"https://github.com/themiya-kaluarachchi",
             facefookUserName:""
         }
     },
@@ -73,7 +73,7 @@ export const developers = [
             xaddress:"",
             linkinaddress:"",
             gmail:"",
-            githubprofile:"",
+            githubprofile:"https://www.github.com/Erangamadhushan/",
             facefookUserName:""
         }
     }
