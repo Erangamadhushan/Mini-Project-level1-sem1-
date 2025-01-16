@@ -5,25 +5,27 @@ window.addEventListener("DOMContentLoaded", () => {
 function renderRootContent() {
     const rootSection = document.querySelector('.root');
     let rootContent = `
-        <div class="">
-            <div class=" border border-white rounded px-3 py-4">
-                <div class="px-2 ">
-                    <h3 class="text-success py-2">Vision</h3>
-                    <p class="h5">
-                        To inspire and empower people to explore the world, create unforgettable memories, and foster a deeper understanding of diverse cultures through seamless and accessible travel experiences.
-                    </p>
+        <div class="row py-5 gap-3 d-flex justify-content-center">
+            <div class="col-md-5 py-5 border border-sm">
+                <div class=" border border-white rounded px-3 py-4">
+                    <div class="px-2 ">
+                        <h3 class="text-success py-2">Vision</h3>
+                        <p class="h5">
+                            To inspire and empower people to explore the world, create unforgettable memories, and foster a deeper understanding of diverse cultures through seamless and accessible travel experiences.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="">
-            <div class="border border-white rounded px-3 py-4">
-                <div class="px-2">
-                    <h3 class="text-success py-2">Mission</h3>
-                    <p class="h5">
-                        Our mission is to be the ultimate travel companion, providing comprehensive, reliable, and personalized resources that cater to every traveler's needs.
-                        We aim to simplify the journey from planning to booking, offering expert advice, curated experiences, and innovative tools that turn dream destinations into reality.
-                        Through our commitment to sustainability and cultural respect, we strive to make travel not just an adventure, but a force for positive change.
-                    </p>
+            <div class="col-md-6 py-5 border border-sm">
+                <div class="border border-white rounded px-3 py-4">
+                    <div class="px-2">
+                        <h3 class="text-success py-2">Mission</h3>
+                        <p class="h5">
+                            Our mission is to be the ultimate travel companion, providing comprehensive, reliable, and personalized resources that cater to every traveler's needs.
+                            We aim to simplify the journey from planning to booking, offering expert advice, curated experiences, and innovative tools that turn dream destinations into reality.
+                            Through our commitment to sustainability and cultural respect, we strive to make travel not just an adventure, but a force for positive change.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

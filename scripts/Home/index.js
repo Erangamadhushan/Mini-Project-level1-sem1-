@@ -48,7 +48,7 @@ function renderFoodStyles() {
         </div>
         <div class="row py-4 justify-content-center">
             <div class"d-grid place-items-center">
-                <a href="./food_styles.html" class="btn btn-outline-success">Explorer More ..</a>
+                <a href="./foodStyles.html" class="btn btn-outline-success">Explorer More ..</a>
             </div>
         </div>
     `
