@@ -1,5 +1,24 @@
 @import '../base';
 
+//navbar styles start here 
+.navbar {
+    .navbar-brand {
+        font-size:1.5em;
+        span {
+            color:coral;
+        }
+    }
+    .navbar-nav {
+        .nav-link {
+            font-size:1.1em;
+            color:#222;
+            text-align:center;
+            &:hover {
+                color:coral;
+            }
+        }
+    }
+}
 .scrollNavBar {
     position: fixed;
     left: 0;

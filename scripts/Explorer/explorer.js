@@ -1,6 +1,7 @@
 import { explorer } from "./explorerContent.js";
 
 window.addEventListener("DOMContentLoaded", () => {
+    renderReasonSection();
     renderwildlifeContent(explorer.wildlife[0]);
     renderwelcomePeople(explorer.welcomePeople[0]);
     renderculturalHeritage(explorer.culturalHeritage[0]);
@@ -12,10 +13,22 @@ window.addEventListener("DOMContentLoaded", () => {
     renderlocalFood(explorer.localFood[0]);
 });
 
+function renderReasonSection() {
+    const reasonsContainer = document.getElementById('reasons');
+    let reasonContent = `
+        <div>
+            <h3 class="text-center text-success">
+                Sri Lanka oftern referred to as the "Pearl of the Indian Ocean," is a captivationg island nation renownded for its rich cultural heritage, deverse landscapes and warm hostitality. From sun-kkissed beaches to ancient temples and lush tea plantations, the country offers a plethora of experiences for traverlers.
+            </h3>
+        </div>
+    `;
+    reasonsContainer.innerHTML = reasonContent;
+}
+
 function renderwildlifeContent(itemContent) {
     const wildlifeContentContainer = document.querySelector("#wildlife");
     let wildlifeContent = `
-        <h2>${itemContent.title}</h2>
+        <h2 class="text-success pb-3">${itemContent.title}</h2>
         <div class="col-md-5">
             <div id="${itemContent.title}" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner w-100">
@@ -45,7 +58,7 @@ function renderwildlifeContent(itemContent) {
 function renderwelcomePeople(itemContent) {
     const welcomePeopleContainer = document.querySelector("#welcomePeople");
     let welcomePeopleContent = `
-        <h2>${itemContent.title}</h2>
+        <h2 class="text-success pb-3">${itemContent.title}</h2>
         <div class="col-md-5">
             <div id="${itemContent.title}" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -75,7 +88,7 @@ function renderwelcomePeople(itemContent) {
 function renderculturalHeritage(itemContent) {
     const culturalHeritageContainer = document.querySelector("#culturalHeritage");
     let culturalHeritageContent = `
-        <h2>${itemContent.title}</h2>
+        <h2 class="text-success pb-3">${itemContent.title}</h2>
         <div class="col-md-5">
             <div id="${itemContent.title}" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -105,7 +118,7 @@ function renderculturalHeritage(itemContent) {
 function renderplantation(itemContent) {
     const  plantationContainer = document.querySelector("#plantation");
     let  plantationContent = `
-        <h2>${itemContent.title}</h2>
+        <h2 class="text-success pb-3">${itemContent.title}</h2>
         <div class="col-md-5">
             <div id="${itemContent.title}" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -135,7 +148,7 @@ function renderplantation(itemContent) {
 function renderclimate(itemContent) {
     const  climateContainer = document.querySelector("#climate");
     let  climateContent = `
-        <h2>${itemContent.title}</h2>
+        <h2 class="text-success pb-3">${itemContent.title}</h2>
         <div class="col-md-5">
             <div id="${itemContent.title}" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -165,7 +178,7 @@ function renderclimate(itemContent) {
 function rendertrainJourney(itemContent) {
     const  trainJourneyContainer = document.querySelector("#trainJourney");
     let  trainJourneyContent = `
-        <h2>${itemContent.title}</h2>
+        <h2 class="text-success pb-3">${itemContent.title}</h2>
         <div class="col-md-5">
             <div id="${itemContent.title}" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -195,7 +208,7 @@ function rendertrainJourney(itemContent) {
 function renderBeach(itemContent) {
     const  beachContainer = document.querySelector("#beaches");
     let  beachContent = `
-        <h2>${itemContent.title}</h2>
+        <h2 class="text-success pb-3">${itemContent.title}</h2>
         <div class="col-md-5">
             <div id="${itemContent.title}" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -225,7 +238,7 @@ function renderBeach(itemContent) {
 function renderEscapes(itemContent) {
     const  escapesContainer = document.querySelector("#escapes");
     let  escapesContent = `
-        <h2>${itemContent.title}</h2>
+        <h2 class="text-success pb-3">${itemContent.title}</h2>
         <div class="col-md-5">
             <div id="${itemContent.title}" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -255,7 +268,7 @@ function renderEscapes(itemContent) {
 function renderlocalFood(itemContent) {
     const  localFoodContainer = document.querySelector("#localFood");
     let  localFoodContent = `
-        <h2>${itemContent.title}</h2>
+        <h2 class="text-success pb-3">${itemContent.title}</h2>
         <div class="col-md-5">
             <div id="${itemContent.title}" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
