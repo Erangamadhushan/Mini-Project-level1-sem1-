@@ -42,7 +42,7 @@ export  const explorer = {
     trainJourney: [
         {
             title:"Epic Train Journeys",
-            img1:"image_video/Train01.jpg",
+            img1:"image_video/footer_image.jpg",
             img2:"image_video/Train02.jpg",
             desc:"One of the best ways to explore Sri Lanka is by train. The country has several fantastic rail routes that will carry you through bustling cities, dense forests, deep valleys and surf towns, promising unbelievable views along the way. If you only have time for one train journey, make it the one from Colombo to Kandy. This historic route will take you from Sri Lanka's largest and busiest city to its tranquil cultural capital, passing through tropical paddies and picturesque villages as you go."
         }

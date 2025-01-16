@@ -43,7 +43,13 @@ body {
 .carousel .carousel-inner {
   overflow: hidden;
 }
+.carousel .carousel-inner .carousel-item {
+  position: relative;
+}
 .carousel .carousel-inner .carousel-item img {
+  position: relative;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-size: cover;
