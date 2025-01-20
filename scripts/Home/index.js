@@ -142,7 +142,7 @@ function renderRelativeSectionContent(foreign, local) {
                     <div class="row">
                         <div class="col-md-4">
                             <img src="${local[0].img}" alt="${local[0].topic}"/>
-                            <a href="#" class="btn btn-lg mt-5 btn-outline-success ">${local[0].buttonText}</a>
+                            <a href="./searchDestination.html" class="btn btn-lg mt-5 btn-outline-success ">${local[0].buttonText}</a>
                         </div>
                         <div class="col-md-6">
                             <ul>
