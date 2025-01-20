@@ -1,4 +1,4 @@
-const filterDestinations = [
+export const filterDestinations = [
     {
         province:"Western Province",
         district:[
