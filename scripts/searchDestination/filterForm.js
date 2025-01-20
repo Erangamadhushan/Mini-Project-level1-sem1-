@@ -58,3 +58,7 @@ function renderFilterForm() {
     `
     filterContainer.innerHTML = filterFormContent;
 }
+
+document.getElementById('directSubmitButton').onclick = () => {
+    
+}
