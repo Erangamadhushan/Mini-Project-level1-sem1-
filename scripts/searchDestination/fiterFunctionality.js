@@ -1,3 +1,4 @@
+//import { filterDestinations } from "./filterDestinations";
 const province = JSON.parse(localStorage.getItem("province"));
 console.log(province);
 const district = JSON.parse(localStorage.getItem("district"));
@@ -17,7 +18,7 @@ function reRenderForm() {
 }
 
 
-function renderFilterForm(currentprovince) {
+function renderFilterForm(currentprovince,district) {
     const filterContainer = document.getElementById('filterForm');
     console.log(currentprovince);
 let filterFormContent = `
@@ -47,7 +48,7 @@ let filterFormContent = `
                 <h2 class="text-center">Advanced Search Option</h2>
             </div>
             <div class="container">
-                <form id="searchfiltering">
+                <form id="searchfiltering" >
                     <div class="py-3 d-flex justify-content-center">
                         <select class="form-select" id="province" onchange="provinceValue()" style="width:75%;">
                         
@@ -73,15 +74,16 @@ let filterFormContent = `
             `;
         });
     });
-
     filterFormContent += `                        
                             </select>
                         </div>
                         
+                        
     `;
+    
     filterFormContent += `
                         <div class="py-3 d-flex justify-content-center">
-                            <input type="submit" class="btn btn-outline-success" value="Search"/>
+                            <input type="button" class="btn btn-outline-success" value="Search" onclick="searchFiltering()"/>
                             <input type="reset" class="btn btn-outline-danger" onclick="reRenderForm()" value="Reset"/>
                         </div>
                     </form>
@@ -128,5 +130,29 @@ function provinceValue() {
     provinceAndDistrict.push(districtValues);
     provinceAndDistrictContent.push(provinceAndDistrict);
     console.log(provinceAndDistrict);
-    renderFilterForm(provinceAndDistrictContent);
+    renderFilterForm(provinceAndDistrictContent, district);
+}
+
+function searchFiltering() {
+    let currentProvinceValue = document.getElementById('province').value;
+    let currentDistrictValue = document.getElementById('district').value;
+    console.log(currentProvinceValue);
+    console.log(currentDistrictValue);
+
+    let serarchResult = [];
+    const searchResultContainer = document.getElementById('filterResult');
+    searchResultContainer.innerHTML = '';
+    province.forEach((province) => {
+        //console.log(province);
+        if (province == currentProvinceValue) {
+            district.forEach((dist) => {
+                console.log(dist);
+                if (dist.district == currentDistrictValue) {
+                    //serarchResult.push(dist.place);
+                    console.log(dist.district);
+                }
+            });
+        }
+    });
+    console.log(serarchResult);
 }
