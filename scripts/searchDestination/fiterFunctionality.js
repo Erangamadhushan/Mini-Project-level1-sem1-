@@ -143,16 +143,57 @@ function searchFiltering() {
     const searchResultContainer = document.getElementById('filterResult');
     searchResultContainer.innerHTML = '';
     province.forEach((province) => {
-        //console.log(province);
-        if (province == currentProvinceValue) {
+        if (province[0] == currentProvinceValue) {
             district.forEach((dist) => {
-                console.log(dist);
                 if (dist.district == currentDistrictValue) {
-                    //serarchResult.push(dist.place);
-                    console.log(dist.district);
+                    let districtValue = dist.district;
+                    dist.places.forEach((place) => {
+                        let placeDetails = [];
+                        let placeTitle = place.place;
+                        let placeDetailsContent = [];
+                        place.example.forEach((example) => {
+                            placeDetailsContent.push(example);
+                            //console.log(example);
+                        });
+                        let content = [placeTitle, placeDetailsContent];
+                        placeDetails.push(content);
+                        //console.log(placeDetailsContent);
+                        serarchResult.push(placeDetails);
+                    });
+
                 }
             });
         }
     });
-    console.log(serarchResult);
+    //console.log(serarchResult);
+    let searchResultContent = `<div class="row d-flex flex-wrap"> `;
+    serarchResult.forEach((result) => {
+        console.log(result);
+        result.forEach((resultEle) => {
+            searchResultContent += `
+                <div>
+                    <div class=" my-4 shadow-md">
+                        <h2 class="text-success">${resultEle[0]}</h2>
+                    </div>
+                </div>
+            `;
+            resultEle[1].forEach((place) => {
+                searchResultContent += `
+                <div class="row shadow shadow-md py-3 my-2">
+                    <div>
+                        <p>${place}</p>
+                        <button type="button" class="btn btn-outline-success">Find More</button>
+                    </div>
+                </div>
+                `;
+            
+            })
+            
+        })
+    });
+    searchResultContent += `
+        </div>
+    `;
+    console.log(searchResultContent);
+    searchResultContainer.innerHTML += searchResultContent;
 }
