@@ -6,18 +6,20 @@ const places = JSON.parse(localStorage.getItem("places"));
 //console.log(places);
 window.addEventListener("DOMContentLoaded", () => {
     renderFilterForm(province);
-    provinceValue();
+    //provinceValue();
 })
 function directFilterContent() {
     console.log(filterDestinations);
 }
 
+function reRenderForm() {
+    renderFilterForm(province);
+}
 
 
 function renderFilterForm(currentprovince) {
     const filterContainer = document.getElementById('filterForm');
-    
-    let currentProvinceDistrict = JSON.parse(sessionStorage.getItem("currentProvinceDistrict"));
+    console.log(currentprovince);
 let filterFormContent = `
     <div class="row">
         <h1 class="text-center py-2">Search Destinations</h1>
@@ -50,11 +52,12 @@ let filterFormContent = `
                         <select class="form-select" id="province" onchange="provinceValue()" style="width:75%;">
                         
 `;
-    currentprovince.forEach((province1) => {
-        filterFormContent += `
-            <option value="${province1[0]}">${province1[0]}</option>
-        `
-        console.log(province1[0]);
+    currentprovince.forEach((province) => {
+       
+           filterFormContent += `
+                <option value="${province[0]}">${province[0]}</option>
+           `;
+        console.log(province[0]);
     });
     filterFormContent += `
                     </select>
@@ -63,26 +66,23 @@ let filterFormContent = `
                             <select class="form-select disable" id="district" onchange="districtValue()" style="width:75%;">
                             `;
 
-    currentProvinceDistrict.forEach((ele) => {
-        filterFormContent += `
-            <option value="${ele}">${ele}</option>
-        `
+    currentprovince.forEach((ele) => {
+        ele[1].forEach((dist) => {
+            filterFormContent += `
+                <option value="${dist}">${dist}</option>
+            `;
+        });
     });
 
     filterFormContent += `                        
                             </select>
                         </div>
-                        <div class="py-3 d-flex justify-content-center">
-                            <select class="form-select disable" style="width:75%;">
+                        
     `;
     filterFormContent += `
-                            </select>
-                        </div>
-                        <div class="py-3 d-flex justify-content-center">
-                            <input type="text" id="city" class="form-control p-2" style="width:75%;"/>
-                        </div>
                         <div class="py-3 d-flex justify-content-center">
                             <input type="submit" class="btn btn-outline-success" value="Search"/>
+                            <input type="reset" class="btn btn-outline-danger" onclick="reRenderForm()" value="Reset"/>
                         </div>
                     </form>
                 </div>
@@ -94,25 +94,39 @@ let filterFormContent = `
 
     
 }
+function districtPlaces() {
+    const filterContainer = document.getElementById('filterForm');
+    let filterFormContent = `
+    <div class="row">
+        <h1 class="text-center py-2">Search Destinations</h1>
+    </div>
+    `;
+    filterContainer.innerHTML += filterFormContent;
+}
+districtPlaces();
 
 function provinceValue() {
-    let currentProvinceValue = document.querySelector("#province").value;
-    let currentProvince = [];
-    console.log(currentProvinceValue);
-    let comfirmProvince = [];
-    province.forEach((prov) => {
-        if(prov[0] == currentProvinceValue) {
-            let currentDistricts = []
-            comfirmProvince.push(prov[0]);
-            prov[1].forEach((district) => {
-                currentDistricts.push(district);
+    district.forEach((ele) => {
+        console.log(ele);
+    });
+    const currentProvince = document.getElementById('province').value;
+    console.log(currentProvince);
+    let provinceAndDistrictContent = [];
+    let provinceAndDistrict = []
+    let districtValues = [];
+    let place = [];
+    province.forEach((ele) => {
+        if (ele[0] === currentProvince) {
+            provinceAndDistrict.push(ele[0]);
+            ele[1].forEach((dist) => {
+                districtValues.push(dist);
+                console.log(dist);
                 
             });
-            console.log(currentDistricts);
-            sessionStorage.setItem("currentProvinceDistrict",JSON.stringify(currentDistricts))
-            
-        };
-        currentProvince.push(comfirmProvince)
-    });
-    renderFilterForm();
+        }
+    })
+    provinceAndDistrict.push(districtValues);
+    provinceAndDistrictContent.push(provinceAndDistrict);
+    console.log(provinceAndDistrict);
+    renderFilterForm(provinceAndDistrictContent);
 }
