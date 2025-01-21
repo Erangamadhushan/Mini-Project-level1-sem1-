@@ -82,7 +82,7 @@ let filterFormContent = `
     `;
     
     filterFormContent += `
-                        <div class="py-3 d-flex justify-content-center">
+                        <div class="py-3 d-flex justify-content-center gap-3">
                             <input type="button" class="btn btn-outline-success" value="Search" onclick="searchFiltering()"/>
                             <input type="reset" class="btn btn-outline-danger" onclick="reRenderForm()" value="Reset"/>
                         </div>
@@ -176,18 +176,20 @@ function searchFiltering() {
                         <h2 class="text-success">${resultEle[0]}</h2>
                     </div>
                 </div>
+                <div class="row gap-3  py-3 my-2">
             `;
             resultEle[1].forEach((place) => {
                 searchResultContent += `
-                <div class="row shadow shadow-md py-3 my-2">
-                    <div>
+                
+                    <div class="col-md-3 shadow shadow-md py-3 my-2">
                         <p>${place}</p>
                         <button type="button" class="btn btn-outline-success">Find More</button>
                     </div>
-                </div>
+                
                 `;
             
             })
+            searchResultContent += `</div>`;
             
         })
     });
