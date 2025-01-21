@@ -1,5 +1,11 @@
+const province = JSON.parse(localStorage.getItem("province"));
+console.log(province);
+const district = JSON.parse(localStorage.getItem("district"));
+//console.log(district);
+const places = JSON.parse(localStorage.getItem("places"));
+//console.log(places);
 window.addEventListener("DOMContentLoaded", () => {
-    renderFilterForm();
+    renderFilterForm(province);
     provinceValue();
 })
 function directFilterContent() {
@@ -7,15 +13,11 @@ function directFilterContent() {
 }
 
 
-const province = JSON.parse(localStorage.getItem("province"));
-//console.log(province);
-const district = JSON.parse(localStorage.getItem("district"));
-//console.log(district);
-const places = JSON.parse(localStorage.getItem("places"));
-//console.log(places);
-function renderFilterForm() {
+
+function renderFilterForm(currentprovince) {
     const filterContainer = document.getElementById('filterForm');
     
+    let currentProvinceDistrict = JSON.parse(sessionStorage.getItem("currentProvinceDistrict"));
 let filterFormContent = `
     <div class="row">
         <h1 class="text-center py-2">Search Destinations</h1>
@@ -48,10 +50,11 @@ let filterFormContent = `
                         <select class="form-select" id="province" onchange="provinceValue()" style="width:75%;">
                         
 `;
-    province.forEach((province) => {
+    currentprovince.forEach((province1) => {
         filterFormContent += `
-            <option value="${province[0]}">${province[0]}</option>
-        `;
+            <option value="${province1[0]}">${province1[0]}</option>
+        `
+        console.log(province1[0]);
     });
     filterFormContent += `
                     </select>
@@ -60,7 +63,6 @@ let filterFormContent = `
                             <select class="form-select disable" id="district" onchange="districtValue()" style="width:75%;">
                             `;
 
-    let currentProvinceDistrict = JSON.parse(sessionStorage.getItem("currentProvinceDistrict"));
     currentProvinceDistrict.forEach((ele) => {
         filterFormContent += `
             <option value="${ele}">${ele}</option>
@@ -93,45 +95,24 @@ let filterFormContent = `
     
 }
 
-function provinceValue(){
-    let provinceValue = document.querySelector("#province").value;
-    console.log(provinceValue);
-    province.forEach((province) => {
-        if(province[0] ==  provinceValue) {
-            let districtValues = [];
-            province[1].forEach((ele) => {
-                districtValues.push(ele); 
+function provinceValue() {
+    let currentProvinceValue = document.querySelector("#province").value;
+    let currentProvince = [];
+    console.log(currentProvinceValue);
+    let comfirmProvince = [];
+    province.forEach((prov) => {
+        if(prov[0] == currentProvinceValue) {
+            let currentDistricts = []
+            comfirmProvince.push(prov[0]);
+            prov[1].forEach((district) => {
+                currentDistricts.push(district);
+                
             });
-            console.log(districtValues)
-            sessionStorage.setItem("currentProvinceDistrict",JSON.stringify(districtValues));
-        }
-        //console.log(province);
+            console.log(currentDistricts);
+            sessionStorage.setItem("currentProvinceDistrict",JSON.stringify(currentDistricts))
+            
+        };
+        currentProvince.push(comfirmProvince)
     });
     renderFilterForm();
 }
-
-
-
-
-/*
-</select>
-                        </div>
-                        <div class="py-3 d-flex justify-content-center">
-                            <select class="form-select disabled" id="province" style="width:75%;">
-                            </select>
-                        </div>
-                        <div class="py-3 d-flex justify-content-center">
-                            <input type="text" id="city" class="form-control p-2" style="width:75%;"/>
-                        </div>
-                        <div class="py-3 d-flex justify-content-center">
-                            <input type="text" id="city" class="form-control p-2" style="width:75%;"/>
-                        </div>
-                        <div class="py-3 d-flex justify-content-center">
-                            <input type="submit" class="btn btn-outline-success" value="Search"/>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-*/
