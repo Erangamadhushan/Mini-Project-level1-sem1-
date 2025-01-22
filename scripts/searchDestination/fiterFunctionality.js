@@ -5,12 +5,14 @@ const district = JSON.parse(localStorage.getItem("district"));
 //console.log(district);
 const places = JSON.parse(localStorage.getItem("places"));
 //console.log(places);
+const directSearch = JSON.parse(localStorage.getItem("directSearch"));
 window.addEventListener("DOMContentLoaded", () => {
     renderFilterForm(province);
     //provinceValue();
-})
+});
+
 function directFilterContent() {
-    console.log(filterDestinations);
+    window.location.replace("./searchResult.html");
 }
 
 function reRenderForm() {
@@ -37,7 +39,15 @@ let filterFormContent = `
             <div>
                 <div class="row w-100">
                     <div class="d-flex justify-content-center" >
-                        <input type="text" class="rounded" id="directInputField" placeholder="Seeach Destination" style="width:75%;padding:10px;"/>
+                        <select class="form-select" id="directSearch" style="width:75%;">`;
+
+    directSearch.forEach((ele) => {
+        filterFormContent += `
+            <option value="${ele}">${ele}</option>
+        `;
+    })
+    
+    filterFormContent += `</select>
                     </div>
                     <div class="d-flex justify-content-center py-2">
                         <button type="button" id="directSubmitButton" onclick="directFilterContent()" class="p-3 bg-success px-5 rounded border border-none text-white">Search</button>

@@ -1,0 +1,53 @@
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.footer {
+  min-height: 50vh;
+  background-image: url("../image_video/footer_image.jpg");
+  background-size: cover;
+  padding: 0;
+  color: #fff;
+}
+
+.footer_link div a {
+  display: grid;
+  text-decoration: none;
+  padding: 5px 20px;
+  color: #fff;
+}
+
+.footer_link div a:hover {
+  color: yellow;
+}
+
+.footer_color {
+  background-color: black;
+  min-height: 50vh;
+  opacity: 0.7;
+}
+
+.footer_description p {
+  color: yellow;
+  padding: 10px;
+}
+
+.footer_description h3, h4 {
+  padding: 15px;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.5em;
+}
+.navbar .navbar-brand span {
+  color: coral;
+}
+.navbar .navbar-nav .nav-link {
+  font-size: 1.1em;
+  color: #222;
+  text-align: center;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: coral;
+}/*# sourceMappingURL=style.css.map */

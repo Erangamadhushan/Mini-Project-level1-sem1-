@@ -56,7 +56,7 @@ export const filterDestinations = [
                 district:"Kalutara District",
                 places:[
                     {
-                        place:"Kalutara:",
+                        place:"Kalutara",
                         example:[
                             "Richmond Castle",
                             "Kalutara Vihara"

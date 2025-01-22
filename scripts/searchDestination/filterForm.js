@@ -37,3 +37,7 @@ filterDestinations.forEach((destinations) => {
 });
 places = JSON.stringify(places);
 localStorage.setItem("places", places);
+
+let directSearch = ["Colombo City", "Negombo", "Kalutara", "Kandy City", "Horton Plains", "Unawatuna", "Hikkaduwa", "Mirissa", "Yala National Park", "Nilaveli", "Anuradhapura", "Ella", "Sigiriya", "Sinharaja", "Adam's Peak", "Ambuluwawa", "Pinnawala"];  
+directSearch = JSON.stringify(directSearch);
+localStorage.setItem("directSearch", directSearch);
