@@ -1,13 +1,11 @@
 export const allContent = [
     {
         title: "Colombo City",
+        subTitle:"About",
+        desc:"The commercial capital and largest city of Sri Lanka, Colombo blends modern urban life with colonial architecture. A major port city with a rich history of over 2000 years of trade, it serves as the financial and cultural hub of the country.",
+        img:"",
+        map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.58638744405!2d79.77380303255441!3d6.9220019813323646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo!5e0!3m2!1sen!2slk!4v1737550313586!5m2!1sen!2slk",
         content: [
-            {
-                title:"About",
-                content: [
-                    "The commercial capital and largest city of Sri Lanka, Colombo blends modern urban life with colonial architecture. A major port city with a rich history of over 2000 years of trade, it serves as the financial and cultural hub of the country."
-                ]
-            },
             {
                 title:"Weather",
                 content: [
@@ -82,13 +80,11 @@ export const allContent = [
     },
     ,{
         title: "Negombo",
+        subTitle:"About",
+        desc:"Coastal city known for its fishing industry, Dutch colonial heritage, and beach life. Located close to the international airport, featuring historic churches, bustling fish markets, and golden beaches.",
+        img:"",
+        map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126670.33644594673!2d79.77585073436784!3d7.189611414426809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2ee9c6bb2f73b%3A0xa51626e908186f3e!2sNegombo!5e0!3m2!1sen!2slk!4v1737551136280!5m2!1sen!2slk",
         content: [
-            {
-                title:"About",
-                content: [
-                    "Coastal city known for its fishing industry, Dutch colonial heritage, and beach life. Located close to the international airport, featuring historic churches, bustling fish markets, and golden beaches."
-                ]
-            },
             {
                 title:"Weather",
                 content: [
@@ -164,13 +160,11 @@ export const allContent = [
     },
     {
         title: "Kalutara",
+        subTitle:"About",
+        desc:"",
+        img:"",
+        map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63415.581807164635!2d79.89931731570755!3d6.587869031140448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2371ee59557e5%3A0x8b86ba840e8a7b51!2sKalutara!5e0!3m2!1sen!2slk!4v1737551264824!5m2!1sen!2slk",
         content: [
-            {
-                title:"",
-                content: [
-                    
-                ]
-            },
             {
                 title:"",
                 content: [
@@ -217,13 +211,11 @@ export const allContent = [
     },
     {
         title: "Kandy City",
+        subTitle:"About",
+        desc:"The commercial capital and largest city of Sri Lanka, Colombo blends modern urban life with colonial architecture. A major port city with a rich history of over 2000 years of trade, it serves as the financial and cultural hub of the country.",
+        img:"",
+        map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63320.41806366728!2d80.58458147199794!3d7.294628572996305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae366266498acd3%3A0x411a3818a1e03c35!2sKandy!5e0!3m2!1sen!2slk!4v1737551372600!5m2!1sen!2slk",
         content: [
-            {
-                title:"About",
-                content: [
-                    "The commercial capital and largest city of Sri Lanka, Colombo blends modern urban life with colonial architecture. A major port city with a rich history of over 2000 years of trade, it serves as the financial and cultural hub of the country."
-                ]
-            },
             {
                 title:"Weather",
                 content: [
@@ -297,13 +289,11 @@ export const allContent = [
     },
     {
         title: "Horton Plains",
+        subTitle:"About",
+        desc:"Cloud forest plateau at altitude over 2,000m. Famous for World's End precipice and Baker's Falls. Rich biodiversity and unique ecosystem.",
+        img:"",
+        map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8806.979654268654!2d80.79746237564594!3d6.80967931490733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3882edb4b78ef%3A0xcebca89153777249!2sHorton%20Plains%20National%20Park!5e0!3m2!1sen!2slk!4v1737551481317!5m2!1sen!2slk",
         content: [
-            {
-                title:"About",
-                content: [
-                    "Cloud forest plateau at altitude over 2,000m. Famous for World's End precipice and Baker's Falls. Rich biodiversity and unique ecosystem."
-                ]
-            },
             {
                 title:"Weather",
                 content: [
@@ -377,13 +367,11 @@ export const allContent = [
     },
     {
         title: "Unawatuna",
+        subTitle:"About",
+        desc:"Picturesque beach town known for its coral reef, turtle hatcheries, and calm bay. Popular for swimming and snorkeling.",
+        img:"",
+        map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31743.0127460243!2d80.23375477284199!3d6.011677944282783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae172f162bf926d%3A0xc0444c5e8377446c!2sUnawatuna!5e0!3m2!1sen!2slk!4v1737551574192!5m2!1sen!2slk",
         content: [
-            {
-                title:"About",
-                content: [
-                    "Picturesque beach town known for its coral reef, turtle hatcheries, and calm bay. Popular for swimming and snorkeling."
-                ]
-            },
             {
                 title:"Weather",
                 content: [
@@ -457,13 +445,11 @@ export const allContent = [
     },
     {
         title: "Hikkaduwa",
+        subTitle:"About",
+        desc:"Popular beach resort town known for surfing, coral reefs, and sea turtle hatcheries. Features vibrant marine life, beach parties, and water sports.",
+        img:"",
+        map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31736.176594980232!2d80.09843197287823!3d6.127731627758163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae177fbcae7226d%3A0x373eeb50aad15308!2sHikkaduwa!5e0!3m2!1sen!2slk!4v1737551657261!5m2!1sen!2slk",
         content: [
-            {
-                title:"About",
-                content: [
-                    "Popular beach resort town known for surfing, coral reefs, and sea turtle hatcheries. Features vibrant marine life, beach parties, and water sports."
-                ]
-            },
             {
                 title:"Weather",
                 content: [
@@ -538,13 +524,11 @@ export const allContent = [
     },
     {
         title: "Mirissa",
+        subTitle:"About",
+        desc:"Coastal paradise known for whale watching, surfing, and pristine beaches. Popular for its laid-back atmosphere and marine life.",
+        img:"",
+        map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15873.25013104264!2d80.4537819894522!3d5.95160384669953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae13fce3177dc59%3A0xa2d8a78b36dc9c90!2sMirissa!5e0!3m2!1sen!2slk!4v1737551812043!5m2!1sen!2slk",
         content: [
-            {
-                title:"About",
-                content: [
-                    "Coastal paradise known for whale watching, surfing, and pristine beaches. Popular for its laid-back atmosphere and marine life."
-                ]
-            },
             {
                 title:"Weather",
                 content: [
@@ -618,13 +602,11 @@ export const allContent = [
     },
     {
         title: "Yala National Park",
+        subTitle:"About",
+        desc:"Sri Lanka's most visited wildlife park, famous for highest leopard density in the world. Features diverse ecosystems including monsoon forests, grasslands, marine wetlands, and beaches.",
+        img:"",
+        map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.4544580008087!2d81.46930977448011!3d6.46396662385335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae5d3a62ffb9359%3A0x3bb623d70b5a3314!2sYala%20National%20Park!5e0!3m2!1sen!2slk!4v1737551905132!5m2!1sen!2slk",
         content: [
-            {
-                title:"About",
-                content: [
-                    "Sri Lanka's most visited wildlife park, famous for highest leopard density in the world. Features diverse ecosystems including monsoon forests, grasslands, marine wetlands, and beaches."
-                ]
-            },
             {
                 title:"Weather",
                 content: [
@@ -699,13 +681,11 @@ export const allContent = [
     },
     {
         title: "Nilaveli",
+        subTitle:"About",
+        desc:"Pristine beach destination on the east coast, known for its white sands, clear waters, and Pigeon Island Marine National Park. Famous for snorkeling and diving.",
+        img:"",
+        map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63102.82260436423!2d81.11672460349558!3d8.698538427097766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afbbfb09eed1271%3A0x6eba10b3ef82c431!2sNilaveli%20Beach!5e0!3m2!1sen!2slk!4v1737551976783!5m2!1sen!2slk",
         content: [
-            {
-                title:"About",
-                content: [
-                    "Pristine beach destination on the east coast, known for its white sands, clear waters, and Pigeon Island Marine National Park. Famous for snorkeling and diving."
-                ]
-            },
             {
                 title:"Weather",
                 content: [
@@ -779,13 +759,11 @@ export const allContent = [
     },
     {
         title: "Anuradhapura",
+        subTitle:"About",
+        desc:"Ancient capital and UNESCO World Heritage site, featuring well-preserved ruins of ancient Sri Lankan civilization. Home to sacred Bo Tree and numerous dagobas.",
+        img:"",
+        map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126325.51655902175!2d80.3209111933995!3d8.335313209181342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afcf4f99360e159%3A0xc111fe9ebc6dcf0e!2sAnuradhapura!5e0!3m2!1sen!2slk!4v1737552046134!5m2!1sen!2slk",
         content: [
-            {
-                title:"About",
-                content: [
-                    "Ancient capital and UNESCO World Heritage site, featuring well-preserved ruins of ancient Sri Lankan civilization. Home to sacred Bo Tree and numerous dagobas."
-                ]
-            },
             {
                 title:"Weather",
                 content: [
@@ -859,13 +837,11 @@ export const allContent = [
     },
     {
         title: "Ella",
+        subTitle:"About",
+        desc:"Mountain village famous for hiking, scenic train rides, and tea culture. Features iconic Nine Arch Bridge, Little Adam's Peak, and spectacular valley views.",
+        img:"",
+        map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15844.84298183606!2d81.03704728953034!3d6.865330194109672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae465955bc09a25%3A0xbdfadcdadec487fb!2sElla!5e0!3m2!1sen!2slk!4v1737552107412!5m2!1sen!2slk",
         content: [
-            {
-                title:"About",
-                content: [
-                    "Mountain village famous for hiking, scenic train rides, and tea culture. Features iconic Nine Arch Bridge, Little Adam's Peak, and spectacular valley views."
-                ]
-            },
             {
                 title:"Weather",
                 content: [
@@ -940,13 +916,11 @@ export const allContent = [
     },
     {
         title: "Sigiriya",
+        subTitle:"About",
+        desc:"UNESCO World Heritage site featuring an ancient palace complex atop a massive rock fortress. Known for its frescoes, lion gateway, and water gardens.",
+        img:"",
+        map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63222.843153870876!2d80.7030355555643!3d7.954676169778976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afca0dfa73179d1%3A0x1e04c1150cff0edf!2sSigiriya!5e0!3m2!1sen!2slk!4v1737552268718!5m2!1sen!2slk",
         content: [
-            {
-                title:"About",
-                content: [
-                    "UNESCO World Heritage site featuring an ancient palace complex atop a massive rock fortress. Known for its frescoes, lion gateway, and water gardens."
-                ]
-            },
             {
                 title:"Weather",
                 content: [
@@ -1020,13 +994,11 @@ export const allContent = [
     },
     {
         title: "Sinharaja",
+        subTitle:"About",
+        desc:"UNESCO World Heritage rainforest, known for its high biodiversity, endemic species, and pristine ecosystem. Last viable area of primary tropical rainforest in Sri Lanka.",
+        img:"",
+        map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.8991153513857!2d80.45515567562241!3d6.406996107989242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3e76bd109d45f%3A0x8c0ef1010649701b!2sSinharaja%20Forest%20Reserve!5e0!3m2!1sen!2slk!4v1737552362199!5m2!1sen!2slk",
         content: [
-            {
-                title:"About",
-                content: [
-                    "UNESCO World Heritage rainforest, known for its high biodiversity, endemic species, and pristine ecosystem. Last viable area of primary tropical rainforest in Sri Lanka."
-                ]
-            },
             {
                 title:"Weather",
                 content: [
@@ -1100,13 +1072,11 @@ export const allContent = [
     },
     {
         title: "Adam's Peak",
+        subTitle:"About",
+        desc:"Sacred mountain peak featuring Buddha's footprint, attracting pilgrims and hikers. Spectacular sunrise views and unique shadow phenomenon.",
+        img:"",
+        map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15846.688952680246!2d80.48908843952499!3d6.809664047465599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3977589234b59%3A0x8723ad471d5b37dc!2sSri%20Pada%20%2F%20Adam&#39;s%20Peak!5e0!3m2!1sen!2slk!4v1737552471271!5m2!1sen!2slk",
         content: [
-            {
-                title:"About",
-                content: [
-                    "Sacred mountain peak featuring Buddha's footprint, attracting pilgrims and hikers. Spectacular sunrise views and unique shadow phenomenon."
-                ]
-            },
             {
                 title:"Weather",
                 content: [
@@ -1180,13 +1150,11 @@ export const allContent = [
     },
     {
         title: "Ambuluwawa",
+        subTitle:"About",
+        desc:"Unique biodiversity complex and tower offering 360-degree views. Features multiple religious buildings and botanical gardens.",
+        img:"",
+        map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.68733553681!2d80.54476667448431!3d7.1620985154141446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae371f9321a8e85%3A0x179eeb74fc7ef1f1!2sAmbuluwawa%20Trigonometrical%20Station%2C%20Ambuluwaawa%20ICC%20Road%2C%20Gampola!5e0!3m2!1sen!2slk!4v1737552554551!5m2!1sen!2slk",
         content: [
-            {
-                title:"About",
-                content: [
-                    "Unique biodiversity complex and tower offering 360-degree views. Features multiple religious buildings and botanical gardens."
-                ]
-            },
             {
                 title:"Weather",
                 content: [
@@ -1261,13 +1229,11 @@ export const allContent = [
     
     {
         title: "Pinnawala",
+        subTitle:"About",
+        desc:"Famous elephant orphanage and conservation center. Known for elephant bathing and feeding sessions. Educational and tourist attraction.",
+        img:"",
+        map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15829.805867121338!2d80.37726393957477!3d7.303068017034013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae315c9dd1d20b1%3A0x5b721ab11d88d6cf!2sPinnawala%2C%20Rambukkana!5e0!3m2!1sen!2slk!4v1737552618811!5m2!1sen!2slk",
         content: [
-            {
-                title:"About",
-                content: [
-                    "Famous elephant orphanage and conservation center. Known for elephant bathing and feeding sessions. Educational and tourist attraction."
-                ]
-            },
             {
                 title:"Weather",
                 content: [

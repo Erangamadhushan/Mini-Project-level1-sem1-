@@ -12,6 +12,8 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 function directFilterContent() {
+    let directSearchValue = document.getElementById('directSearch').value;
+    sessionStorage.setItem("directSearchValue", JSON.stringify(directSearchValue));
     window.location.replace("./searchResult.html");
 }
 
