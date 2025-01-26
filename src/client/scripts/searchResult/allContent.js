@@ -761,7 +761,7 @@ export const allContent = [
         title: "Anuradhapura",
         subTitle:"About",
         desc:"Ancient capital and UNESCO World Heritage site, featuring well-preserved ruins of ancient Sri Lankan civilization. Home to sacred Bo Tree and numerous dagobas.",
-        img:"./assets/images/searchResult/",
+        img:"./assets/images/searchResult/anuradhapura.jpg",
         map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126325.51655902175!2d80.3209111933995!3d8.335313209181342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afcf4f99360e159%3A0xc111fe9ebc6dcf0e!2sAnuradhapura!5e0!3m2!1sen!2slk!4v1737552046134!5m2!1sen!2slk",
         content: [
             {
@@ -839,7 +839,7 @@ export const allContent = [
         title: "Ella",
         subTitle:"About",
         desc:"Mountain village famous for hiking, scenic train rides, and tea culture. Features iconic Nine Arch Bridge, Little Adam's Peak, and spectacular valley views.",
-        img:"./assets/images/searchResult/",
+        img:"./assets/images/searchResult/ella.jpg",
         map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15844.84298183606!2d81.03704728953034!3d6.865330194109672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae465955bc09a25%3A0xbdfadcdadec487fb!2sElla!5e0!3m2!1sen!2slk!4v1737552107412!5m2!1sen!2slk",
         content: [
             {
@@ -918,7 +918,7 @@ export const allContent = [
         title: "Sigiriya",
         subTitle:"About",
         desc:"UNESCO World Heritage site featuring an ancient palace complex atop a massive rock fortress. Known for its frescoes, lion gateway, and water gardens.",
-        img:"./assets/images/searchResult/",
+        img:"./assets/images/searchResult/sigiriya.jpg",
         map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63222.843153870876!2d80.7030355555643!3d7.954676169778976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afca0dfa73179d1%3A0x1e04c1150cff0edf!2sSigiriya!5e0!3m2!1sen!2slk!4v1737552268718!5m2!1sen!2slk",
         content: [
             {
@@ -996,7 +996,7 @@ export const allContent = [
         title: "Sinharaja",
         subTitle:"About",
         desc:"UNESCO World Heritage rainforest, known for its high biodiversity, endemic species, and pristine ecosystem. Last viable area of primary tropical rainforest in Sri Lanka.",
-        img:"./assets/images/searchResult/",
+        img:"./assets/images/searchResult/sinharaja.jpg",
         map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.8991153513857!2d80.45515567562241!3d6.406996107989242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3e76bd109d45f%3A0x8c0ef1010649701b!2sSinharaja%20Forest%20Reserve!5e0!3m2!1sen!2slk!4v1737552362199!5m2!1sen!2slk",
         content: [
             {
@@ -1152,7 +1152,7 @@ export const allContent = [
         title: "Ambuluwawa",
         subTitle:"About",
         desc:"Unique biodiversity complex and tower offering 360-degree views. Features multiple religious buildings and botanical gardens.",
-        img:"./assets/images/searchResult/",
+        img:"./assets/images/searchResult/ambuluwava.jpg",
         map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.68733553681!2d80.54476667448431!3d7.1620985154141446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae371f9321a8e85%3A0x179eeb74fc7ef1f1!2sAmbuluwawa%20Trigonometrical%20Station%2C%20Ambuluwaawa%20ICC%20Road%2C%20Gampola!5e0!3m2!1sen!2slk!4v1737552554551!5m2!1sen!2slk",
         content: [
             {
@@ -1231,7 +1231,7 @@ export const allContent = [
         title: "Pinnawala",
         subTitle:"About",
         desc:"Famous elephant orphanage and conservation center. Known for elephant bathing and feeding sessions. Educational and tourist attraction.",
-        img:"./assets/images/searchResult/",
+        img:"./assets/images/searchResult/pinnawala.jpg",
         map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15829.805867121338!2d80.37726393957477!3d7.303068017034013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae315c9dd1d20b1%3A0x5b721ab11d88d6cf!2sPinnawala%2C%20Rambukkana!5e0!3m2!1sen!2slk!4v1737552618811!5m2!1sen!2slk",
         content: [
             {
