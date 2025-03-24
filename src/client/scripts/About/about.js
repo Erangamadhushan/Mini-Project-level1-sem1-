@@ -9,14 +9,14 @@ function renderRootContent() {
             <div class="col-md-5 py-5 border border-sm">
                 <div class=" border border-white rounded px-3 py-4">
                     <div class="px-2 ">
-                        <h3 class="text-success py-2">Vision</h3>
+                        <h3 class="text-success py-2 text-center">Vision</h3>
                         <p class="h5">
                             To inspire and empower people to explore the world, create unforgettable memories, and foster a deeper understanding of diverse cultures through seamless and accessible travel experiences.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 py-5 border border-sm">
+            <div class="col-md-5  py-5 " data-aos="fade-up" data-aos-duration="1000">
                 <div class="border border-white rounded px-3 py-4">
                     <div class="px-2">
                         <h3 class="text-success py-2">Mission</h3>

@@ -27,6 +27,7 @@ function renderMainDescription() {
         </div>
     `;
 };
+//Sri Lanka, historically known as Ceylon and officially the Democratic Socialist Republic of Sri Lanka, is an island country in South Asia. It lies in the Indian Ocean, southwest of the Bay of Bengal, separated from the Indian peninsula by the Gulf of Mannar and the Palk Strait.
 
 function renderFoodStyles() {
     const foodStylesContainer = document.querySelector('.foodStylesContainer');
